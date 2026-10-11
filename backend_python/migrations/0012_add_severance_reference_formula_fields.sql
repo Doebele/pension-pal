@@ -1,0 +1,10 @@
+ALTER TABLE severance_plans
+ADD COLUMN IF NOT EXISTS formula_v2_enabled BOOLEAN,
+ADD COLUMN IF NOT EXISTS start_calculation_day INTEGER,
+ADD COLUMN IF NOT EXISTS start_calculation_month INTEGER,
+ADD COLUMN IF NOT EXISTS start_calculation_year INTEGER,
+ADD COLUMN IF NOT EXISTS months_until_reference_age INTEGER,
+ADD COLUMN IF NOT EXISTS formula_part1_chf DOUBLE PRECISION,
+ADD COLUMN IF NOT EXISTS formula_part2_chf DOUBLE PRECISION,
+ADD COLUMN IF NOT EXISTS calculated_abfindung_chf DOUBLE PRECISION,
+ADD COLUMN IF NOT EXISTS formula_used VARCHAR(64);

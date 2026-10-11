@@ -1,0 +1,82 @@
+# -----------------------------------------------------------------------------
+# Runtime data & secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+data/secrets/
+deployment-config/*.env
+!deployment-config/strato-vps.env
+# Local ops data (server address, paths) for Claude Code — never commit
+CLAUDE.local.md
+# Settings backups (Import/Export → Einstellungen sichern) contain API keys in plain text
+pension-pal-settings_*.json
+# Production DB dumps (scripts/backup-db.sh)
+backups/
+
+# -----------------------------------------------------------------------------
+# Build artifacts
+# -----------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+dist/
+build/
+coverage/
+.next/
+.nuxt/
+.turbo/
+
+# -----------------------------------------------------------------------------
+# Python artifacts
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.sqlite3
+
+# -----------------------------------------------------------------------------
+# Docker / local runtime files
+# -----------------------------------------------------------------------------
+data/*
+!data/
+!data/swiss_locations.json
+data/db/
+db_data/
+*.pid
+tmp/
+.docker/
+
+# -----------------------------------------------------------------------------
+# Logs
+# -----------------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------------------------------------------------------
+# OS / IDE
+# -----------------------------------------------------------------------------
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# -----------------------------------------------------------------------------
+# Cursor / editor caches
+# -----------------------------------------------------------------------------
+.cursor/plans/
+.cursor/tasks/
+

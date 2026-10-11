@@ -1,0 +1,42 @@
+{
+  "name": "swisspensioncalc-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check:text": "node scripts/check-text-quality.mjs",
+    "check:payout": "node --experimental-strip-types --no-warnings src/services/payoutPlanning.check.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@fontsource/fira-sans": "^5.3.0",
+    "@simplewebauthn/browser": "^13.3.0",
+    "@tanstack/react-query": "^5.90.21",
+    "framer-motion": "^12.35.1",
+    "i18next": "^23.16.8",
+    "i18next-browser-languagedetector": "^8.0.2",
+    "iconoir-react": "^7.10.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.71.2",
+    "react-i18next": "^15.1.4",
+    "recharts": "^2.12.7",
+    "round-flag-icons": "^1.3.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "~5.9",
+    "vite": "^6.0.0"
+  }
+}

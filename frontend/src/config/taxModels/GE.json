@@ -1,0 +1,18 @@
+{
+  "kanton": { "code": "GE", "name": "Genf" },
+  "progressionTable": [
+    { "incomeMin": 0, "incomeMax": 25000, "taxRate": 2.2 },
+    { "incomeMin": 25000, "incomeMax": 50000, "taxRate": 3.8 },
+    { "incomeMin": 50000, "incomeMax": 80000, "taxRate": 5.4 },
+    { "incomeMin": 80000, "incomeMax": 120000, "taxRate": 7.1 },
+    { "incomeMin": 120000, "incomeMax": 180000, "taxRate": 8.6 },
+    { "incomeMin": 180000, "incomeMax": 999999999, "taxRate": 9.6 }
+  ],
+  "lumpSum": { "enabled": false, "rate": null },
+  "metadata": {
+    "version": "ge-v1",
+    "validFromYear": 2025,
+    "source": "Approximate cantonal model",
+    "archivedVersions": []
+  }
+}

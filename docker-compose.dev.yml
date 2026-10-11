@@ -1,0 +1,61 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: pension_pal_db_dev
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-pension_pal}
+      POSTGRES_USER: ${POSTGRES_USER:-pension_pal}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pension_pal_dev}
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data_dev:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend_python
+    container_name: pension_pal_backend_dev
+    environment:
+      APP_ENV: development
+      DATABASE_URL: ${DATABASE_URL:-postgresql://pension_pal:pension_pal_dev@db:5432/pension_pal}
+      MISTRAL_API_KEY: ${MISTRAL_API_KEY:-}
+      SECRET_KEY: ${SECRET_KEY:-dev-only-secret}
+      ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-120}
+      # Ohne SMTP_HOST steht die Mail samt Reset-Link im Backend-Log
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-465}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_FROM: ${SMTP_FROM:-}
+      APP_BASE_URL: ${APP_BASE_URL:-http://localhost:5173}
+    volumes:
+      - ./backend_python:/app
+      - ./data/uploads:/app/uploads
+    ports:
+      - "8001:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # reach LM Studio/Ollama on the host (Linux)
+    depends_on:
+      - db
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    restart: unless-stopped
+
+  web:
+    image: node:22-alpine
+    container_name: pension_pal_web_dev
+    working_dir: /app
+    environment:
+      VITE_API_BASE_URL: http://localhost:8001
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0 --port 5173"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  db_data_dev:

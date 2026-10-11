@@ -1,0 +1,1347 @@
+{
+  "app": {
+    "name": "PensionPal",
+    "tagline": "Altersvorsorge-Planer"
+  },
+  "nav": {
+    "dataEntrySection": "Datenerfassung",
+    "analysisSection": "Auswertung & Analyse",
+    "personal": "1) Persönliche Angaben",
+    "ahv": "2) Erste Säule (AHV)",
+    "bvg": "3) Zweite Säule (BVG)",
+    "pillar3": "4) Dritte Säule (3a/3b)",
+    "lifeInsurance": "5) Lebensversicherung",
+    "severance": "6) Abfindung",
+    "assets": "7) Vermögensübersicht",
+    "analysis": "Auswertung & Analyse",
+    "montecarlo": "Monte Carlo",
+    "documents": "Dokument-Import",
+    "knowledge": "Wissen",
+    "importExport": "Import / Export",
+    "csvExport": "CSV Export",
+    "csvImport": "CSV Import",
+    "cockpit": "Cockpit (Planung)"
+  },
+  "rail": {
+    "collapseSidebar": "Seitenleiste einklappen",
+    "expandSidebar": "Seitenleiste ausklappen",
+    "comfort": "Komfort",
+    "pro": "Pro",
+    "density": "Dichte",
+    "lightMode": "Hell",
+    "darkMode": "Dunkel",
+    "theme": "Thema",
+    "language": "Sprache",
+    "menu": "Menü",
+    "closeMenu": "Menü schließen"
+  },
+  "backend": {
+    "label": "Backend",
+    "checking": "prüft...",
+    "connected": "verbunden",
+    "offline": "offline"
+  },
+  "user": {
+    "account": "Konto",
+    "logout": "Abmelden",
+    "switchUser": "Konto wechseln",
+    "confirmSwitch": "Du wirst abgemeldet und kannst dich mit einem anderen Konto anmelden.",
+    "switchConfirmBtn": "Abmelden & wechseln",
+    "confirmLogoutTitle": "Abmelden?",
+    "confirmLogoutBody": "Bist du sicher, dass du dich abmelden möchtest?",
+    "confirmLogoutYes": "Ja, abmelden",
+    "confirmLogoutInProgress": "Abmelden...",
+    "confirmLogoutNo": "Nein, bleiben",
+    "settings": "Einstellungen"
+  },
+  "buttons": {
+    "cancel": "Abbrechen"
+  },
+  "common": {
+    "pleaseSelect": "Bitte wählen",
+    "notSet": "Noch nicht erfasst",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "noChanges": "Keine Änderungen",
+    "saveChanges": "Änderungen speichern",
+    "saveDetails": "Angaben speichern",
+    "remove": "Entfernen",
+    "years": "Jahre",
+    "open": "Offen",
+    "autoCalculated": "Automatisch berechnet",
+    "viewKnowledgeEntry": "Wissenseintrag ansehen"
+  },
+  "options": {
+    "gender": {
+      "male": "Männlich",
+      "female": "Weiblich",
+      "other": "Divers"
+    },
+    "maritalStatus": {
+      "single": "Unverheiratet",
+      "married": "Verheiratet",
+      "divorced": "Geschieden",
+      "widowed": "Witwer/Witwe",
+      "concubinage": "Konkubinat"
+    },
+    "livingSituation": {
+      "rent": "Mietwohnung",
+      "own": "Eigenheim / Wohneigentum",
+      "rentShort": "Miete"
+    },
+    "propertyUsage": {
+      "owner_occupied": "Eigengebrauch",
+      "rented_out": "Vermietet",
+      "mixed": "Gemischt"
+    }
+  },
+  "personal": {
+    "intro": "Basis für alle Rentenberechnungen (AHV/BVG/3a) und Hochrechnung bis Alter 100.",
+    "birthDate": {
+      "label": "Geburtsdatum",
+      "help": "Das Geburtsdatum bestimmt Alter, Referenzalter und Projektionshorizont. Du findest es auf amtlichen Ausweisen.",
+      "errorInvalid": "Ungültiges Geburtsdatum.",
+      "errorFuture": "Geburtsdatum ist in der Zukunft.",
+      "errorMinAge": "Geburtsdatum muss mindestens 18 Jahre zurückliegen."
+    },
+    "gender": {
+      "label": "Geschlecht",
+      "help": "Diese Angabe gilt global für AHV- und weitere Vorsorgeberechnungen."
+    },
+    "maritalStatus": {
+      "label": "Zivilstand",
+      "help": "Relevante Option für AHV/BVG-Hinterlassenenleistungen."
+    },
+    "livingSituation": {
+      "label": "Wohnsituation",
+      "help": "Diese Angabe steuert Lebenskosten- und Vermögensberechnung."
+    },
+    "taxDomicile": {
+      "label": "Wohnkanton / Steuersitz",
+      "help": "Dieser Kanton wird global für Steuerberechnungen verwendet."
+    },
+    "marriageYear": {
+      "label": "Heiratsjahr",
+      "help": "Jahr der Heirat oder des Partnerschaftsbeginns."
+    },
+    "divorceYear": {
+      "label": "Scheidungsjahr",
+      "help": "Nur bei Zivilstand Geschieden erforderlich."
+    },
+    "marriageYears": {
+      "label": "Ehejahre",
+      "help": "Automatisch berechnet aus Heiratsjahr und Scheidungsjahr.",
+      "formulaDivorce": "Formel: Scheidungsjahr - Heiratsjahr",
+      "formulaCurrent": "Formel: Aktuelles Jahr - Heiratsjahr"
+    },
+    "rentMonthly": {
+      "label": "Monatliche Miete (CHF) - für Lebenskostenberechnung",
+      "help": "Die Miete wird für Budget und Vermögensentwicklung verwendet. Quelle ist dein aktueller Mietvertrag."
+    },
+    "rentYearly": {
+      "label": "Jährliche Miete (CHF) - optional",
+      "help": "Jahresmiete ergänzt die Monatsangabe für Plausibilisierung. Falls unbekannt, kann das Feld leer bleiben."
+    },
+    "propertyName": {
+      "label": "Bezeichnung Objekt",
+      "help": "Die Objektbezeichnung dient der klaren Zuordnung in der Analyse."
+    },
+    "propertyUsage": {
+      "label": "Nutzung",
+      "help": "Die Nutzung steuert, ob Eigennutzung oder Vermietung in die Cashflow-Logik eingeht."
+    },
+    "propertyValue": {
+      "label": "Schätzwert Immobilie (CHF) - für Vermögen",
+      "help": "Der Marktwert wird für die Nettovermögensrechnung verwendet."
+    },
+    "propertyMortgage": {
+      "label": "Hypothek (CHF)",
+      "help": "Die Hypothek reduziert das Nettovermögen und beeinflusst Ausgaben."
+    },
+    "propertyLandArea": {
+      "label": "Grundstücksfläche (m2)",
+      "help": "Die Fläche dient der Kontextualisierung des Objekts."
+    },
+    "additionalProperties": {
+      "title": "Zusatzimmobilien",
+      "add": "Weitere Immobilie hinzufügen",
+      "item": "Immobilie {{index}}",
+      "labelPlaceholder": "Bezeichnung (z.B. Ferienwohnung)",
+      "rentalUnit": "Vermieter-Einheit",
+      "valuePlaceholder": "Schätzwert (CHF)",
+      "mortgagePlaceholder": "Hypothek (CHF)",
+      "rentalIncomePlaceholder": "Mieteinnahmen monatlich (CHF) - Pflicht für Vermieter"
+    }
+  },
+  "cards": {
+    "personal": "1. Persönliche Angaben",
+    "ahv": "2. Erste Säule (AHV)",
+    "bvg": "3. Zweite Säule (BVG)",
+    "pillar3": "4. Dritte Säule 3a",
+    "lifeInsurance": "5. Dritte Säule 3b (LV)",
+    "severance": "6. Abfindung",
+    "assets": "7. Vermögensübersicht"
+  },
+  "dashboard": {
+    "title": "Pensionsübersicht",
+    "subtitle": "Geordneter Vorsorge-Flow mit zentraler Dokumentenverwaltung.",
+    "toasts": {
+      "lvAnalyzed": "Lebensversicherung analysiert",
+      "lvImportFailed": "LV-Import fehlgeschlagen",
+      "importNotPossible": "Import nicht möglich.",
+      "mappingIncomplete": "Zuordnung unvollständig",
+      "removeDuplicates": "Bitte doppelte Zielfeld-Zuordnungen entfernen.",
+      "lvAccepted": "LV-Vorschlag übernommen",
+      "lvAcceptedMessage": "Importierte Policedaten wurden in das Formular übernommen.",
+      "importSuccess": "Import erfolgreich",
+      "importUncertain": "Import unsicher",
+      "previewAvailable": "Vorschau verfügbar. Zielfeld lokal zuordnen.",
+      "mapManually": "Bitte Werte manuell zuordnen und prüfen.",
+      "importFailed": "Import fehlgeschlagen",
+      "ahvAnalyzed": "AHV-Import analysiert",
+      "ahvImportFailed": "AHV-Import fehlgeschlagen",
+      "removeDuplicatesBeforeAccept": "Bitte entferne doppelte Zielfeld-Zuordnungen, bevor du den Vorschlag übernimmst.",
+      "ahvAccepted": "AHV-Vorschlag übernommen",
+      "ahvAcceptedMessage": "Die importierten Beitragsdaten wurden in die Tabelle übernommen.",
+      "ahvDiscarded": "AHV-Vorschlag verworfen",
+      "ahvDiscardedMessage": "Importierte Vorschläge wurden nicht übernommen.",
+      "checkOnly": "Nur prüfen",
+      "checkOnlyMessage": "Es wurden nur sekundäre Felder ausgewählt. Keine automatische Übernahme.",
+      "valueInserted": "Wert eingefügt",
+      "valueInsertedMessage": "{{count}} OCR-Feld(er) nach {{target}} übernommen.",
+      "secondaryOpen": "Sekundäre Felder offen",
+      "secondaryOpenMessage": "{{count}} Feld(er) zur Prüfung markiert.",
+      "fileInvalid": "Datei ungültig"
+    },
+    "profileLoadError": "Profil konnte nicht live geladen werden. Es wird mit lokalem Stand gearbeitet.",
+    "closeImportAria": "Import-Zuordnung schließen",
+    "importMappingTitle": "Import Zuordnung: Parse & Preview",
+    "importMappingSubtitle": "Prüfe die extrahierten Felder und bestätige die Übernahme.",
+    "zipChecking": "PLZ wird geprüft...",
+    "zipNotFound": "PLZ nicht eindeutig gefunden. Ort/Kanton bitte manuell prüfen."
+  },
+  "bvg": {
+    "providerFallback": "2. Säule / BVG Pensionskasse",
+    "asOf": "Stand per {{date}}",
+    "intro": "Die folgenden Kennzahlen fliessen direkt in die Pensionsberechnung ein. Werte können bei Bedarf manuell angepasst werden (z.B. ohne PDF-Import).",
+    "summaryHelp": "Dieser Wert fliesst direkt in die BVG-Prognose ein. Du findest ihn im BVG-Pensionskassenausweis.",
+    "moreDetails": "Weitere Angaben anzeigen",
+    "detailsNote": "Diese Detailfelder spiegeln die Angaben aus dem BVG-Pensionskassenausweis (z.B. UBS) wider. Sie können durch den PDF-Import vorbelegt oder manuell nachgetragen werden. Für die eigentliche Berechnung werden primär die Kennzahlen im oberen Bereich verwendet.",
+    "fields": {
+      "annualSalary": "Jahressalär",
+      "insuredSalaryTotal": "Total versichertes Salär",
+      "currentOldageCapital": "Altersguthaben (total)",
+      "bvgOldageCapital": "BVG-Altersguthaben",
+      "vestedBenefitsTotal": "Freizügigkeitsleistung",
+      "wefAvailable": "WEF verfügbar",
+      "asOfDate": {
+        "label": "Stichtag",
+        "help": "Der Stichtag zeigt, von welchem Ausweisstand die Daten stammen. Er steht oben auf dem Vorsorgeausweis."
+      },
+      "coordinationDeduction": {
+        "label": "Koordinationsabzug",
+        "help": "Der Koordinationsabzug beeinflusst den versicherten Lohn im BVG. Du findest ihn im Ausweis oder Reglement."
+      },
+      "insuredSalaryRentenplan": {
+        "label": "Versichertes Salär Rentenplan",
+        "help": "Dieses Salär zeigt den versicherten Teil im Rentenplan. Quelle ist der detaillierte BVG-Pensionskassenausweis."
+      },
+      "insuredSalaryBonusplan": {
+        "label": "Versichertes Salär Bonusplan",
+        "help": "Dieser Wert erfasst den versicherten Bonusanteil. Er ist im Vorsorgeausweis als separater Plan ausgewiesen."
+      },
+      "maxBuyinTotal": {
+        "label": "Max. Einkauf total",
+        "help": "Der maximale Einkauf zeigt mögliche steuerwirksame Einzahlungen. Du findest ihn im Vorsorgeausweis."
+      },
+      "maxBuyinRentenplan": {
+        "label": "Max. Einkauf Rentenplan",
+        "help": "Dieser Einkaufsspielraum gilt für den Rentenplan-Anteil. Der Wert steht im detaillierten PK-Ausweis."
+      },
+      "maxBuyinBonusplan": {
+        "label": "Max. Einkauf Bonusplan",
+        "help": "Dieser Wert zeigt mögliche Einkäufe im Bonusplan. Er ist im PK-Reglement oder Vorsorgeausweis dokumentiert."
+      }
+    },
+    "overview": {
+      "annualSalary": "Jahressalär",
+      "oldageCapital": "Altersguthaben",
+      "bvgCapital": "BVG-Guthaben"
+    }
+  },
+  "severance": {
+    "intro": "Abfindung erfassen oder berechnen: wähle zwischen fixem Betrag oder Formel-Modell.",
+    "entryType": "Erfassungsart",
+    "exact": "Exakt",
+    "calculate": "Berechnen",
+    "amount": {
+      "label": "Abfindungsbetrag (CHF)",
+      "help": "Gesamter Brutto-/Nettobetrag als Ausgangswert für Allocation und Szenarien."
+    },
+    "formulaModel": {
+      "label": "Berechnungsmodell",
+      "help": "Wähle das gewünschte Modell für die manuelle Abfindungsberechnung.",
+      "tenureSalaryDays": "Anstellung x Lohn x Tagefaktor",
+      "or339bMonths": "OR 339b (Monatslöhne)",
+      "referenceAgeFormula": "Referenzalter-Formel"
+    },
+    "lastSalary": {
+      "label": "Letzter Jahreslohn (CHF)",
+      "help": "Ausgangslohn für alle Berechnungsmodelle."
+    },
+    "calculatedAmount": "Berechneter Betrag:",
+    "employmentStart": {
+      "label": "Anstellung von",
+      "help": "Startdatum für die Berechnung der Dienstjahre."
+    },
+    "employmentEnd": {
+      "label": "Anstellung bis",
+      "help": "Endedatum für die Berechnung der Dienstjahre."
+    },
+    "dayFactor": {
+      "label": "Tagefaktor",
+      "help": "Faktor pro Dienstjahr (1-60), Standard 30."
+    },
+    "monthFactor": {
+      "label": "Monatsfaktor",
+      "help": "Anzahl Monatslöhne gemäss OR 339b (2-8)."
+    },
+    "isGross": "Betrag ist brutto (Steuerabzug aktiv)",
+    "taxDomicile": "Steuerdomizil (aus Persönliche Angaben):",
+    "notSet": "nicht gesetzt",
+    "maturity": {
+      "label": "Fälligkeit (Monat/Jahr)",
+      "help": "Die Fälligkeit steuert den Zeitpunkt der Steuer- und Allokationsberechnung.",
+      "month": "Monat",
+      "year": "Jahr"
+    },
+    "taxRate": "Steuersatz (kantonal): {{rate}}%",
+    "taxAtMaturity": "Steuerbetrag bei Fälligkeit: CHF {{amount}}",
+    "netLimit": "Netto-Limit für Allocation: CHF {{amount}}",
+    "overview": {
+      "gross": "Abfindung brutto",
+      "net": "Netto (nach Steuer)",
+      "maturity": "Fälligkeit"
+    }
+  },
+  "assets": {
+    "tabs": {
+      "cash": "Privatvermögen",
+      "investments": "Anlagevermögen",
+      "ariaLabel": "Vermögensübersicht Tabs"
+    },
+    "cashIntro": "Konten und Barvermögen je Zeile erfassen. Alle Werte werden in CHF normalisiert.",
+    "investmentsIntro": "ETFs, Aktien, Sparpläne und Immobilien-ETFs getrennt erfassen.",
+    "accountTypes": {
+      "bank": "Bankkonto",
+      "cash": "Bargeld",
+      "depot": "Depot",
+      "pillar3a": "Säule 3a Konto",
+      "vested_benefits": "Freizügigkeitskonto",
+      "other": "Sonstiges"
+    },
+    "columns": {
+      "account": {
+        "label": "Konto",
+        "help": "Kontobezeichnung zur eindeutigen Zuordnung. Nutze den Namen aus Konto- oder Depotauszug."
+      },
+      "type": {
+        "label": "Typ",
+        "help": "Der Typ kategorisiert das Vermögen für Auswertungen. Auswahl gemäss Kontoart."
+      },
+      "amount": {
+        "label": "Betrag",
+        "help": "Der Betrag fliesst in die CHF-Gesamtsumme ein. Wert aus aktuellem Kontostand."
+      },
+      "currency": {
+        "label": "Währung",
+        "help": "Die Währung steuert die Umrechnung in CHF für die Gesamtsicht."
+      }
+    },
+    "accountPlaceholder": "z. B. Hauptkonto UBS",
+    "accountTypeAria": "Kontotyp",
+    "removeRowAria": "Zeile entfernen",
+    "addRow": "+ Zeile hinzufügen",
+    "totalCash": "Total Privatvermögen (CHF): {{amount}}",
+    "totalInvestments": "Total Anlagevermögen (CHF): {{amount}}",
+    "fields": {
+      "etf": {
+        "label": "ETF (CHF)",
+        "help": "ETF-Bestände zeigen den liquiden Anlageanteil. Quelle ist dein Depotauszug."
+      },
+      "stocks": {
+        "label": "Aktien (CHF)",
+        "help": "Aktienwerte beeinflussen Rendite und Risiko in Szenarien. Grundlage ist dein Depotstand."
+      },
+      "savings": {
+        "label": "Sparpläne (CHF)",
+        "help": "Sparpläne erfassen regelmässige Investitionen. Quelle ist dein Plan im Bank- oder Brokerportal."
+      },
+      "realEstate": {
+        "label": "Immobilien-ETF (CHF)",
+        "help": "Immobilien-ETF werden separat ausgewiesen für die Vermögensstruktur."
+      }
+    },
+    "overview": {
+      "cash": "Privatvermögen",
+      "investments": "Anlagevermögen"
+    }
+  },
+  "ahv": {
+    "intro": "Erfasse die AHV-Eckwerte. Die erwartete AHV-Pension wird automatisch berechnet und als Ergebnis angezeigt.",
+    "importStructure": "Importstruktur: Jahr | Jahreseinkommen | Total | Alter | AHV Rente Anteil",
+    "chooseFile": "Datei wählen",
+    "parsing": "Parsing...",
+    "parsePreview": "Parse & Preview",
+    "openPreview": "Vorschau öffnen",
+    "selectedFile": "Ausgewählt: {{name}}",
+    "keyData": "Eckdaten",
+    "referenceAge": "Referenzalter: {{age}}",
+    "notAvailable": "nicht verfügbar",
+    "contributionYearsLine": "Beitragsjahre: {{years}}",
+    "expectedPension": "Erwartete AHV-Pension",
+    "perYear": "CHF {{amount}} p.a.",
+    "perMonth": "ca. CHF {{amount}} pro Monat",
+    "modeAria": "AHV Eingabemodus",
+    "approximate": "Ungefähre",
+    "exact": "Exakt",
+    "profileAgeAria": "Aktuelles Profilalter als Referenz",
+    "income": {
+      "label": "Geschätztes durchschnittliches Jahreseinkommen (CHF)",
+      "help": "Dieses Einkommen ist die wichtigste Basis für die AHV-Schätzung. Als Grundlage dienen AHV-Auszug, Lohnabrechnungen oder dein Beitragsverlauf."
+    },
+    "plannedRetirementAge": {
+      "label": "Geplantes Pensionsalter",
+      "help": "Wähle dein geplantes Pensionsalter zwischen 58 und 70 Jahren. Das Alter wird gegen dein aktuelles Profilalter validiert."
+    },
+    "retirementAgeHint": "Das Pensionsalter liegt zwischen 58 und 70 Jahren und muss mindestens deinem Profilalter ({{minAge}}+) entsprechen.",
+    "ageYears": "{{age}} Jahre",
+    "contributionEstimate": {
+      "label": "Beitragsschätzung p.a. (CHF)",
+      "help": "Wenn eine Beitragsgeschichte erfasst ist, wird die Schätzung automatisch berechnet. Ohne Historie kannst du den Wert manuell eintragen."
+    },
+    "contributionYears": {
+      "label": "Beitragsjahre (Schätzung)",
+      "help": "Beitragsjahre beeinflussen den Anspruch auf eine volle AHV-Pension. Bei lückenhafter Beitragsdauer fällt die Pension tiefer aus."
+    },
+    "exactRetirementAge": {
+      "label": "Geplantes Pensionsalter",
+      "help": "Bestimmt den Beginn der AHV wie in der Bezugsplanung: mit der Pensionierung, frühestens 2 Jahre vor dem Referenzalter. Eine frühere Pensionierung allein kürzt die AHV nicht, weil bis zum Referenzalter weiter Beiträge bezahlt werden."
+    },
+    "exactIncome": {
+      "label": "Geschätztes durchschnittliches Jahreseinkommen (CHF)",
+      "help": "Dieser Wert bleibt als Referenz für exakte und ungefähre Berechnung synchron."
+    },
+    "earlyYears": {
+      "label": "Vorbezug (Jahre vor Referenzalter)",
+      "help": "Ergibt sich aus dem geplanten Pensionsalter: Die AHV beginnt mit der Pensionierung, frühestens 2 Jahre vor dem Referenzalter. Jedes Jahr Vorbezug kürzt die Rente lebenslang um 6.8 %."
+    },
+    "lateYears": {
+      "label": "Aufschub (Jahre nach Referenzalter)",
+      "help": "Ergibt sich aus dem geplanten Pensionsalter: Wer nach dem Referenzalter in Pension geht, schiebt die AHV auf (höchstens 5 Jahre). Jedes Jahr erhöht die Rente um 5.2 %."
+    },
+    "import": {
+      "closeAria": "Import-Vorschau schließen",
+      "title": "AHV Import: Parse & Preview",
+      "subtitle": "Prüfe Zuordnung, Validierung und korrigiere Daten vor dem Import.",
+      "summary": "Import Summary",
+      "totalRows": "Total Zeilen: {{count}}",
+      "successRows": "Erfolgreich: {{count}}",
+      "failedRows": "Fehlerhaft: {{count}}",
+      "manualEdit": "Manuelle Korrektur aktivieren",
+      "manualEditHint": "Bei deaktiviertem Modus ist die Vorschau nur lesbar.",
+      "fieldMapping": "Feld-Zuordnung",
+      "confidence": "Treffer: {{percent}}%",
+      "duplicateTitle": "Doppelte Zielfeld-Zuordnung",
+      "duplicateHint": "Übernehmen ist gesperrt, bis jedes Quellfeld eindeutig zugeordnet ist.",
+      "detected": "Erkannt: {{count}}",
+      "avgIncome": "Ø Einkommen (calc): CHF {{amount}}",
+      "totalContributions": "Total Beiträge (calc): CHF {{amount}}",
+      "discard": "Verwerfen",
+      "accept": "Vorschlag übernehmen ({{count}})",
+      "rowValid": "Zeile plausibel",
+      "yearInvalid": "Jahr ungültig",
+      "incomeInvalid": "Einkommen fehlt/ungültig",
+      "totalInvalid": "Total fehlt/ungültig"
+    },
+    "fields": {
+      "year": "Jahr",
+      "annualIncome": "Jahreseinkommen (CHF)",
+      "total": "Total (CHF)",
+      "age": "Alter",
+      "rentShare": "AHV Rente Anteil"
+    },
+    "overview": {
+      "expectedPension": "Erwartete AHV-Pension p.a.",
+      "avgIncome": "Ø Jahreseinkommen"
+    }
+  },
+  "ahvTable": {
+    "title": "Beitragsgeschichte (Jahr für Jahr)",
+    "addRow": "Zeile hinzufügen",
+    "validation": "Validierung",
+    "action": "Aktion",
+    "ok": "OK",
+    "error": "Fehler",
+    "year": {
+      "label": "Jahr",
+      "help": "Das Kalenderjahr der gemeldeten Beitragsdaten. Du findest es im IK-Auszug."
+    },
+    "income": {
+      "label": "Jahreseinkommen",
+      "help": "Massgebendes Einkommen für das jeweilige Jahr. Quelle ist der AHV-Kontoauszug oder Lohnausweis."
+    },
+    "total": {
+      "label": "Total",
+      "help": "Summe der relevanten Beiträge im Jahr. Der Wert wird für Schätzungen genutzt."
+    },
+    "age": {
+      "label": "Alter",
+      "help": "Alter am Jahresende zur zeitlichen Einordnung der Beitragsdaten."
+    },
+    "rentShare": {
+      "label": "AHV Rente Anteil",
+      "help": "Optionaler Anteil für interne Nachvollziehbarkeit pro Jahr."
+    }
+  },
+  "pillar3": {
+    "tabsAria": "Säule 3A Tabs",
+    "tabPayout": "Auszahlungsoptionen",
+    "tabMotion": "Motion Ettlin / Spezifikation",
+    "intro": "Auszahlungsnahe Planung für Säule 3a: Konten, Laufzeit, Steuermodell und erwarteter Nettoauszahlungswert.",
+    "securities": {
+      "label": "Wertpapiere / ETFs / Fonds * (CHF)",
+      "help": "Dieser Betrag zeigt dein aktuelles 3a-Anlagevolumen. Du findest ihn in Depotauszug oder 3a-Kontoauszug.",
+      "placeholder": "z.B. 80 000"
+    },
+    "realEstateEquity": {
+      "label": "Immobilien-EK (Renditeobjekte) (CHF)",
+      "help": "Eigenkapital in Renditeobjekten wird für die Vermögenssicht erfasst. Quelle sind Finanzierungsunterlagen oder Steuerunterlagen.",
+      "placeholder": "z.B. 200 000"
+    },
+    "accountCount": {
+      "label": "Anzahl Säule-3a Konten",
+      "help": "Mehrere 3a-Konten ermöglichen gestaffelte Bezüge und tiefere Progression. Die Anzahl findest du in deinen 3a-Verträgen.",
+      "legend": "Anzahl Säule-3a Konten auswählen",
+      "one": "Ein Konto",
+      "two": "Zwei Konten",
+      "three": "Drei Konten"
+    },
+    "accountBalance": {
+      "label": "Konto {{index}} Guthaben (CHF)",
+      "help": "Kontostand pro 3a-Konto als Basis für Projektion und Steuerplanung. Wert aus dem letzten 3a-Auszug."
+    },
+    "accountReturn": {
+      "label": "Rendite (%)",
+      "help": "Erwartete Jahresrendite für dieses Konto. Nutze konservative Werte gemäss deiner Anlagestrategie."
+    },
+    "accountYears": {
+      "label": "Laufzeit / Jahre",
+      "help": "Anzahl Jahre bis zum Bezug oder bis zur Pensionierung. Diese Angabe steuert die Zinseszins-Projektion."
+    },
+    "taxModel": {
+      "label": "Steuermodell (Platzhalter)",
+      "help": "Das Modell steuert, wie die Kapitalbezugssteuer geschätzt wird. Für finale Werte gelten kantonale Tarife.",
+      "flat": "Einmalbesteuerung (pauschal)",
+      "progressive": "Progressiv (Platzhalter)"
+    },
+    "taxCanton": {
+      "label": "Kanton (Steuer-Vorlage)",
+      "help": "Der Kanton beeinflusst die Bezugssteuer deutlich. Verwende den voraussichtlichen Wohnkanton beim Bezug."
+    },
+    "taxRate": {
+      "label": "Steuersatz (%)",
+      "help": "Dieser Satz wird für die Steuerprognose genutzt. Bei bekanntem Zielwert kannst du ihn manuell überschreiben."
+    },
+    "totalCurrent": "3a Gesamtguthaben aktuell",
+    "totalProjected": "3a Auszahlungswert (projiziert)",
+    "estimatedTax": "Geschätzte Steuerlast",
+    "netAfterTax": "Netto nach Steuern",
+    "monthlySavings": {
+      "label": "Monatliche Sparrate * (CHF)",
+      "help": "Die monatliche Sparrate bestimmt das künftige 3a-Wachstum. Grundlage sind Dauerauftrag oder geplante Einzahlungen."
+    },
+    "baseReturn": {
+      "label": "Erwartete Rendite Basis (%)",
+      "help": "Basiserwartung für die Projektion aller 3a-Konten. Richte dich an deinem Risikoprofil und langfristigen Markterwartungen."
+    },
+    "overview": {
+      "accounts": "3a Konten ({{count}})",
+      "savingsRate": "Sparrate",
+      "perMonth": "CHF {{amount}}/Monat"
+    }
+  },
+  "motionEttlin": {
+    "title": "Motion Ettlin / Spezifikation",
+    "summary": "Geplanter Ruhestand: {{year}} (P), Phase:",
+    "phases": {
+      "aufbau": "Aufbau",
+      "ausgleich": "Ausgleich",
+      "finalcheck": "Finalcheck",
+      "bezug": "Bezug"
+    },
+    "signal": "3a-Signal:",
+    "signalActive": "aktiv",
+    "signalIncomplete": "noch unvollständig",
+    "smartContribution": "Smart Contribution",
+    "plannedContribution": "Geplante Einzahlung (CHF)",
+    "netIncome": "Nettoeinkommen (CHF)",
+    "hasPk": "PK vorhanden",
+    "yes": "Ja",
+    "no": "Nein",
+    "recommendation": "Empfehlung: Einzahlung auf Konto {{account}}.",
+    "payoutCalendar": "Time-Stacking Bezugskalender",
+    "account": "Konto {{label}}",
+    "plannedPayout": "Geplanter Bezug: {{year}}",
+    "pkYearsPlaceholder": "PK-Bezugsjahre: 2033, 2035",
+    "partnerYearsPlaceholder": "Partner-Bezugsjahre: 2031, 2034",
+    "alert": "Alert: {{message}}",
+    "providerShortlist": "Anbieter-Shortlist & Nachweise",
+    "shortlist": "Shortlist: {{list}}",
+    "proof": "Nachweis: {{value}}",
+    "riskManagement": "Risikomanagement",
+    "liquidityPlaceholder": "Liquiditätsreserve (Monate)",
+    "securitiesYes": "Wertschriften-3a: Ja",
+    "securitiesNo": "Wertschriften-3a: Nein",
+    "rulesCheckPlaceholder": "Letzter Regel-Check",
+    "liquidity": "Liquidität: {{value}}",
+    "liquidityLow": "Reserve < 12 Monate",
+    "liquidityOk": "ok",
+    "marketRisk": "Marktrisiko: {{value}}",
+    "marketRiskTriggered": "P-5 erreicht",
+    "marketRiskNone": "kein Trigger",
+    "rules": "Rules: {{value}}",
+    "rulesDue": "Check fällig",
+    "rulesCurrent": "aktuell"
+  },
+  "life": {
+    "intro": "Vertragsbasierte Lebensversicherung erfassen. Dokument-Import unterstützt automatische Extraktion für Kapital und Rentenbeginn aus PDF-Policen.",
+    "insuranceType": {
+      "label": "Versicherungstyp",
+      "help": "Diese Angabe steuert, ob Kapital- oder Rentenwerte für die Planung verwendet werden. Du findest den Typ auf deiner Police.",
+      "renten": "Rentenversicherung",
+      "kapital": "Kapitalversicherung",
+      "gemischt": "Gemischtversicherung",
+      "rentenShort": "Rente",
+      "kapitalShort": "Kapital",
+      "gemischtShort": "Gemischt"
+    },
+    "insurer": {
+      "label": "Versicherer",
+      "help": "Der Versicherer hilft bei der Zuordnung von Policen und Leistungen. Diese Information steht auf Police und Prämienrechnung.",
+      "placeholder": "Versicherer eingeben",
+      "other": "Weitere"
+    },
+    "policyNumber": {
+      "label": "Versicherungsnummer",
+      "help": "Die Versicherungsnummer identifiziert die Police eindeutig."
+    },
+    "insuredName": {
+      "label": "Versichertenname",
+      "help": "Name gemäss Policenkopf."
+    },
+    "currency": {
+      "label": "Währung",
+      "help": "Wählen Sie die Berechnungswährung für die Versicherung."
+    },
+    "capitalSum": {
+      "label": "Kapitalsumme ({{currency}})",
+      "help": "Die Kapitalsumme zeigt die vereinbarte Leistung bei Ablauf oder Ereignis. Du findest sie in der Police unter Leistung/Kapital.",
+      "placeholder": "z.B. 100 000"
+    },
+    "annualRent": {
+      "label": "Jährliche Rentenzahlung ({{currency}})",
+      "help": "Dieser Wert wird für den erwarteten jährlichen Cashflow genutzt. Grundlage ist die ausgewiesene Rentenleistung in der Police.",
+      "placeholder": "z.B. 12 000"
+    },
+    "entryAge": {
+      "label": "Eintrittsalter",
+      "help": "Das Eintrittsalter beeinflusst Laufzeit und Annahmen. Es steht im Vertragsbeginn deiner Versicherung.",
+      "placeholder": "z.B. 45"
+    },
+    "surrenderValue": {
+      "label": "Rückkaufswert ({{currency}})",
+      "help": "Der Rückkaufswert ist der Betrag bei vorzeitiger Auflösung. Er steht in Standmitteilungen oder beim Versicherer.",
+      "placeholder": "z.B. 30 000"
+    },
+    "monthlyPremium": {
+      "label": "Monatliche Prämie ({{currency}})",
+      "help": "Regelmässige Monatsprämie aus der Police."
+    },
+    "sumAtDeath": {
+      "label": "Todesfallkapital ({{currency}})",
+      "help": "Leistung im Todesfall gemäss Vertrag."
+    },
+    "maturityDate": {
+      "label": "Ablaufdatum",
+      "help": "Datum des Vertragsablaufs (falls vorhanden)."
+    },
+    "annualPremium": {
+      "label": "Jahresprämie ({{currency}})",
+      "help": "Die Prämie zeigt deinen regelmässigen Aufwand pro Jahr. Sie ist auf Prämienrechnung und Police ersichtlich."
+    },
+    "maturityYear": {
+      "label": "Ablaufjahr",
+      "help": "Das Ablaufjahr definiert den Leistungszeitpunkt in der Planung. Du findest es in den Vertragsdaten deiner Police."
+    },
+    "monthlyPension": {
+      "label": "Monatliche Rente bei Pensionierung ({{currency}})",
+      "help": "Diese Zahlung fliesst als monatlicher Ertrag in die Ruhestandsplanung ein. Basis ist die garantierte oder erwartete Rentenleistung."
+    },
+    "capitalPayout": {
+      "label": "Kapitalleistung bei Ablauf ({{currency}})",
+      "help": "Diese Leistung wird als einmalige Auszahlung berücksichtigt. Du findest den Wert in der Police unter Ablaufleistung."
+    },
+    "pdfImport": "PDF-Import Lebensversicherung",
+    "parsePreview": "Parse & Preview",
+    "openPreview": "Vorschau öffnen",
+    "projectedShare": "Projizierter monatlicher Anteil im Ruhestand: {{currency}} {{amount}}/Monat",
+    "taxNote": "Steuerhinweis: Kapitalleistungen werden in der CH oft zu einem tieferen Satz besteuert.",
+    "import": {
+      "closeAria": "Import-Vorschau schließen",
+      "title": "Import-Vorschau Lebensversicherung",
+      "subtitle": "Extrahierte Werte prüfen und übernehmen",
+      "detected": "Erkannt: {{count}} Felder",
+      "problems": "Probleme: {{count}}",
+      "manualEdit": "Manuelle Korrektur aktivieren",
+      "duplicateMapping": "Doppelte Zielfeld-Zuordnung vorhanden. Bitte Zuordnung korrigieren.",
+      "missingSurrender": "Rückkaufswert nicht erkannt. Bitte Wert manuell erfassen und Verifizierung vornehmen.",
+      "enterManually": "Wert manuell eingeben",
+      "autoDetected": "Automatisch erkannt",
+      "confidenceLine": "Treffer: {{percent}}% · Extrahiert: {{value}}",
+      "uncertain": "Erkennung unsicher oder leer. Bitte manuell prüfen/verifizieren.",
+      "mediumQuality": "Mittlere Trefferqualität. Verifizierung empfohlen (insbesondere unter 40%).",
+      "autoApply": "Auto-Korrektur übernehmen",
+      "discard": "Verwerfen",
+      "accept": "Vorschlag übernehmen",
+      "confirmUnverified": "Mindestens ein OCR-Wert ist unsicher/überschrieben. Bitte manuelle Eingaben verifizieren. Trotzdem übernehmen?",
+      "ok": "OK",
+      "likely": "Wahrscheinlich",
+      "error": "Fehler"
+    },
+    "fields": {
+      "insurer": "Versicherer",
+      "policyNumber": "Versicherungsnummer",
+      "insuredName": "Versichertenname",
+      "capitalPayoutAtMaturity": "Kapitalleistung bei Ablauf",
+      "annualPensionChf": "Jährliche Rente",
+      "annualPremium": "Jährliche Beiträge",
+      "monthlyPremium": "Monatliche Prämie",
+      "surrenderValue": "Rückkaufswert",
+      "sumAtDeath": "Todesfallkapital",
+      "maturityDate": "Ablaufdatum",
+      "currency": "Währung"
+    },
+    "overview": {
+      "type": "Lebensversicherung / Typ",
+      "portfolioValue": "Portfoliowert (Proj.)",
+      "sharePerYear": "Anteil pro Jahr",
+      "perMonthShort": "CHF {{amount}}/M"
+    }
+  },
+  "login": {
+    "title": "SwissPensionCalc Anmeldung",
+    "apiStatus": "API Verbindung: {{status}}",
+    "apiOnline": "erreichbar",
+    "apiOffline": "nicht erreichbar",
+    "disclaimerTitle": "Wichtiger Hinweis (Demo)",
+    "disclaimerBody1": "Diese Anwendung dient nur zur Demonstration und stellt keine Empfehlung, Zusicherung oder Verbindlichkeit dar.",
+    "disclaimerBody2": "Bitte keine persönlichen, sensiblen oder privaten Daten eingeben.",
+    "disclaimerAccept": "Hinweis gelesen und verstanden"
+  },
+  "montecarlo": {
+    "title": "Monte Carlo Simulation",
+    "subtitle": "Wahrscheinlichkeitsverteilung des realen Endkapitals (inflationsbereinigt).",
+    "runs": "Simulationsläufe",
+    "years": "Jahre",
+    "startCapital": "Startkapital (CHF)",
+    "contribution": "Einzahlung p.a. (CHF)",
+    "expectedReturn": "Erwartete Rendite (%)",
+    "volatility": "Volatilität (%)",
+    "inflation": "Inflation (%)",
+    "p10": "P10 (pessimistisch)",
+    "p50": "P50 (Median)",
+    "p90": "P90 (optimistisch)",
+    "distribution": "Verteilung der Simulationsergebnisse",
+    "runCount": "Anzahl Läufe"
+  },
+  "commonUi": {
+    "hideDetails": "Weitere Angaben ausblenden"
+  },
+  "upload": {
+    "defaultLabel": "Dokument-Import",
+    "onlyPdfJpgPng": "Nur PDF, JPG oder PNG Dateien sind erlaubt.",
+    "tooLarge": "Datei ist zu gross. Maximal {{max}} MB erlaubt.",
+    "ariaSuffix": "{{label}} per Drag and Drop oder Dateiauswahl",
+    "maxNote": "{{label}}: {{max}} MB max",
+    "uploading": "Importiere Dokument...",
+    "globalOnlySupported": "Nur PDF-, CSV- oder Bilddateien (JPG/PNG) können global importiert werden.",
+    "globalTooLarge": "Datei zu gross. Maximal {{max}} MB.",
+    "filesReady": "{{count}} Dateien bereit",
+    "manualUpload": "Manuell hochladen",
+    "dropHere": "PDF/CSV/Bild hier ablegen"
+  },
+  "importExport": {
+    "title": "Import / Export CSV",
+    "subtitle": "Daten zwischen Anwendungen austauschen (CSV Import/Export mit Validierung).",
+    "submenu": "Daten importieren/exportieren",
+    "exportTitle": "📥 CSV Export",
+    "exportSubtitle": "Alle Daten als Datei herunterladen",
+    "importTitle": "📤 CSV Import",
+    "importSubtitle": "Daten aus CSV Datei laden",
+    "securityTitle": "Sicherheit & Kompatibilität",
+    "security1": "- UTF-8 CSV mit Semikolon-Trennung",
+    "security2": "- Header-Validierung + Versionsprüfung (exportVersion >= 1.0)",
+    "security3": "- Dateigrösse begrenzt auf max. 10MB",
+    "security4": "- Numerische Felder werden vor Import validiert",
+    "exportSuccessTitle": "Erfolgreich exportiert",
+    "exportSuccessMessage": "CSV-Datei wurde erstellt und heruntergeladen.",
+    "importSuccessTitle": "Daten erfolgreich importiert",
+    "importSuccessMessage": "Übernommen: {{sections}}.",
+    "noSections": "keine Teilbereiche gemeldet",
+    "sections": {
+      "personal": "Persönliche Angaben",
+      "ahv": "AHV",
+      "assets": "Vermögen",
+      "property": "Immobilie",
+      "pension_fund": "BVG",
+      "third_pillar": "3. Säule",
+      "life_insurance": "Lebensversicherung",
+      "severance": "Abfindung"
+    },
+    "settingsTitle": "⚙️ Einstellungen sichern",
+    "settingsSubtitle": "Einstellungen inkl. API-Keys als JSON sichern/wiederherstellen",
+    "security5": "- Einstellungs-Backup (JSON) enthält API-Keys im Klartext – sicher aufbewahren"
+  },
+  "csvExport": {
+    "title": "Alle Daten exportieren",
+    "subtitle": "Projekt und alle Berechnungen als CSV herunterladen.",
+    "format1": "- Format: CSV (Semikolon als Spaltentrenner)",
+    "format2": "- Zeichensatz: UTF-8",
+    "format3": "- Enthält Metadaten (`timestamp`, `exportVersion`) für Kompatibilität",
+    "success": "Export erfolgreich ({{timestamp}}).",
+    "failed": "Export fehlgeschlagen.",
+    "close": "Schliessen",
+    "start": "CSV Export starten",
+    "inProgress": "Export läuft..."
+  },
+  "csvImport": {
+    "title": "CSV Daten importieren",
+    "subtitle": "Daten von einem anderen System in diese Anwendung laden.",
+    "chooseFile": "CSV Datei auswählen (.csv)",
+    "missingFields": "Verhalten bei fehlenden Feldern",
+    "modeError": "Fehler anzeigen (streng)",
+    "modeSkip": "Fehlende Felder überspringen",
+    "progress": "Fortschritt: {{percent}}%",
+    "selectFirst": "Bitte zuerst eine CSV-Datei auswählen.",
+    "validateFirst": "Bitte die Datei zuerst validieren.",
+    "invalidFile": "Die CSV-Datei ist ungültig oder beschädigt.",
+    "failed": "Import fehlgeschlagen.",
+    "previewDetected": "Vorschau erkannt: {{timestamp}} (Version {{version}})",
+    "previewLine": "Geburt: {{birth}} | Geschlecht: {{gender}} | BVG: {{bvg}} CHF",
+    "cancel": "Abbrechen",
+    "validate": "Datei prüfen",
+    "confirm": "Import bestätigen",
+    "inProgress": "Import läuft..."
+  },
+  "pillars": {
+    "ahv": "1. Säule / AHV",
+    "bvg": "2. Säule / BVG Pensionskasse",
+    "pillar3a": "3. Säule 3a",
+    "life": "3. Säule 3b Lebensversicherung",
+    "privat": "Privatvermögen",
+    "tax": "Steuerbelastung",
+    "taxLoad": "Steuerlast",
+    "capitalBase": "Kapitalbedarf",
+    "gap": "Differenz (Gap)"
+  },
+  "analysisPage": {
+    "title": "Auswertung & Szenarien",
+    "subtitle": "Einkommensverteilung nach Rentenalter und inflationsbereinigte Netto-Pension.",
+    "configureScenario": "Szenario konfigurieren",
+    "scenarios": {
+      "baseline": "Normal",
+      "early": "Frühpension",
+      "late": "Spätpension",
+      "inflation_shock": "Inflations-Schock",
+      "divorce": "Scheidung"
+    },
+    "calcLoadError": "Berechnung konnte nicht geladen werden.",
+    "divorceAge": "Scheidungsalter",
+    "capitalNeed": "Kapitalbedarf",
+    "pensionComposition": "Pension Zusammensetzung",
+    "sum": "Summe: + {{amount}}",
+    "shortfallAnalysis": "Fehlbetrag Analyse",
+    "taxBurden": "Steuerbelastung",
+    "totalShortfall": "Gesamt-Fehlbetrag",
+    "totalAmount": "Gesamtbetrag",
+    "incomeDistribution": "Einkommensverteilung im Alter",
+    "ahvReductionActive": "AHV-Kürzung aktiv ab Jahr {{year}} (Alter {{age}})",
+    "ahvReductionStable": "Stabil im Modell ab Jahr {{year}}: {{percent}}%",
+    "noAhvReduction": "Keine AHV-Kürzung aktiv im aktuellen Szenario",
+    "chartAria": "Balkendiagramm zur Einkommensverteilung im Alter inklusive Steuersegment",
+    "ahvReductionStarts": "AHV-Kürzung startet",
+    "disclaimer": "Vereinfachte Schätzung – keine Finanzberatung.",
+    "bvgWithdrawal": "BVG Entnahme zur Kreditablösung",
+    "netIncomeName": "Nettoeinkommen",
+    "yearAge": "Jahr {{year}} · Alter {{age}}",
+    "taxPa": "Steuer p.a.: CHF {{amount}} ({{percent}}% vom Brutto)",
+    "ahvReductionInScenario": "AHV-Reduktion in diesem Szenario: {{value}}",
+    "noReduction": "keine Kürzung",
+    "remainingWealth": "Restvermögen in diesem Alter: CHF {{amount}}",
+    "totalNetIncome": "Gesamteinkommen netto",
+    "pensionVsCapital": "Pension: {{pension}} · Kapitalbedarf inkl. Steuer: {{capital}}",
+    "underfunding": "Unterdeckung",
+    "surplus": "Überschuss",
+    "pensionIncomeGroup": "Pensionseinkommen",
+    "gapGroup": "Differenz (Gap)",
+    "capitalNeedGroup": "Kapitalbedarf inkl. Steuer",
+    "firstSignal": "Erstes Signal: {{message}}",
+    "checkInputs": "Bitte Eingaben prüfen."
+  },
+  "documents": {
+    "placeholder": "Dokument-Import (PDF hochladen, automatische Verarbeitung im Hintergrund)."
+  },
+  "analysisConfig": {
+    "leftColumn": {
+      "retirementAge": {
+        "label": "Rentenalter",
+        "tooltip": "Pensionsauszahlungszeitpunkt"
+      },
+      "currentAgeEstimate": {
+        "label": "Berechnetes Alter",
+        "tooltip": "Zeitpunkt der Steuerberechnung"
+      },
+      "inflation": {
+        "label": "Inflationsrate",
+        "tooltip": "Preisniveau-Anpassung, beeinflusst Steuern und Einkommen"
+      }
+    },
+    "taxProgression": {
+      "title": "Steuer-Progression",
+      "tooltip": "Je höher das Einkommen, desto höher der effektive Steuersatz."
+    },
+    "taxAdjustment": {
+      "label": "Steuer-Anpassung",
+      "tooltip": "Anpassung des Steuersatzes für Szenarien (±%)"
+    },
+    "stressTest": {
+      "label": "Stress-Test Chart",
+      "tooltip": "Zeigt die Auswirkungen der Steueranpassung auf das Gesamtergebnis"
+    },
+    "taxBurdenSegment": {
+      "label": "Steuersegment im Chart",
+      "tooltip": "Zeigt das Steuersegment im Einkommensdiagramm.",
+      "aria": "Jährliche Steuerbelastung im Balkendiagramm anzeigen"
+    },
+    "rightColumn": {
+      "title": "Steuerübersicht",
+      "taxRate": {
+        "label": "Steuersatz",
+        "tooltip": "Effektiver Steuersatz nach Progression"
+      },
+      "cantonModel": {
+        "label": "Kantonales Modell"
+      },
+      "modelIncome": {
+        "label": "Modell 2025.1 Einkommen",
+        "tooltip": "CHF-Betrag nach Anpassung"
+      }
+    },
+    "taxCanton": {
+      "defaultTooltip": "Automatisch vom Wohnsitzprofil übernommen",
+      "noBracket": "keine Stufe",
+      "summary": "Steuerprogression {{canton}}. Aktuelle Stufe für Einkommen CHF {{income}}: {{bracket}}. Übersicht: {{overview}}"
+    },
+    "compensation": {
+      "title": "Pension & Steuer Ausgleich",
+      "capitalNeedSlider": {
+        "label": "Prozent des letzten Einkommens (2. Säule)"
+      },
+      "capitalNeedTooltip": "Anpassung des benötigten Kapitals für den Renteneintritt.",
+      "capitalNeedBaseTooltip": "Basis ist das letzte Jahreseinkommen aus der 2. Säule.",
+      "lastIncome": "Letztes Einkommen (2. Säule): {{amount}}",
+      "resetLabel": "Reset auf Default",
+      "showChartToggleLabel": "Vergleichsbalken anzeigen",
+      "showChartTooltip": "Zeigt zusätzliche Vergleichsbalken für Steuern und Kapitalbedarf."
+    },
+    "taxModelLoading": "Lade Tarifmodell...",
+    "taxModelErrorPrefix": "Fallback aktiv: {{error}}",
+    "taxInterimSummary": "Steuerauswertung (Zwischenergebnis): CHF {{tax}} p.a. bei {{rate}}% auf Modell-Einkommen CHF {{income}}.",
+    "maturityNotSet": "nicht gesetzt",
+    "ageUnit": "Jahre"
+  },
+  "analysisInputs": {
+    "gridTitle": "Verwendung der Abfindung",
+    "netAvailable": "Netto verfügbar",
+    "column1": {
+      "label": "Einzahlung Pensionskasse",
+      "sliderLabel": "Verzinsung Altersguthaben PK (BVG-Mindestzins 2026: 1,25 %)"
+    },
+    "column2": {
+      "label": "Sparbetrag / Banking",
+      "sliderLabel": "Durchschn. Rendite Portfolio (MSCI)"
+    },
+    "column3": {
+      "label": "Direkte Auszahlung"
+    },
+    "currentValue": "Aktuell",
+    "impactDisplay": "Einkauf bei Pensionierung (im PK-Guthaben der Bezugsplanung)",
+    "pensionGain": "Davon Zins",
+    "horizonYears": "bis Pensionierung",
+    "years": "Jahre",
+    "savingsImpact": "Zinswirkung Sparbetrag",
+    "savingsGain": "Davon Zins-Zuwachs",
+    "msciDefaultValue": "Variabel nach MSCI World Index",
+    "taxOptimizedPayout": "Steueroptimierte Auszahlung",
+    "maturity": "Fälligkeit",
+    "limitExceeded": "Limit überschritten",
+    "paidIn": "Einzahlung {{date}}",
+    "now": "sofort",
+    "usedFrom": "Verwendung ab",
+    "vsBvgMinimum": "{{delta}} Pp. zum BVG-Minimum"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "close": "Schliessen",
+    "save": "Einstellungen speichern",
+    "saved": "Einstellungen gespeichert.",
+    "aiSection": "KI-Modell für Dokumenten-Import",
+    "aiHint": "Liest Felder aus hochgeladenen Vorsorge- und Versicherungsausweisen. Ohne KI-Modell werden die Felder per Mustererkennung gefüllt.",
+    "aiProvider": "Anbieter",
+    "aiLocal": "Lokal (ohne API-Key)",
+    "aiCloud": "Cloud (API-Key)",
+    "disabled": "Deaktiviert",
+    "aiLegend": "✓ Verbindung getestet · 🔑 API-Key gespeichert — Einstellungen je Anbieter bleiben erhalten",
+    "endpointUrl": "Endpoint URL",
+    "endpointTip": "Base-URL des Anbieters — wird bei Anbieterwahl vorausgefüllt",
+    "apiKey": "API Key",
+    "getKey": "API-Key holen",
+    "kimiCodeNote": "Das Kimi-Code-Abo ist laut Kimi für Coding-Tools gedacht. Für eigene Anwendungen empfiehlt Kimi die Kimi Platform (API, Pay-as-you-go).",
+    "modelName": "Modell-Name",
+    "modelTip": "Nach „Verbindung testen“ aus der Liste der verfügbaren Modelle wählen",
+    "chooseModel": "— Modell wählen —",
+    "modelHint": "„Verbindung testen“ lädt die Modellliste",
+    "testConn": "Verbindung testen",
+    "testing": "Teste…",
+    "connOk": "Verbunden",
+    "modelsFound": "{{count}} Modelle verfügbar",
+    "aiTab": "KI-Modell",
+    "securityTab": "Sicherheit"
+  },
+  "backup": {
+    "title": "Einstellungen sichern / wiederherstellen",
+    "hint": "Sichert die gespeicherten Einstellungen als JSON-Datei: Darstellung (Thema, Sprache, Dichte) und alle KI-Anbieter mit Endpoint, Modell und API-Key. Beim Wiederherstellen muss kein Key neu eingegeben werden.",
+    "warn": "Die Datei enthält deine API-Keys im Klartext. Sicher aufbewahren und nicht weitergeben.",
+    "exportBtn": "Einstellungen als JSON exportieren",
+    "importBtn": "Einstellungen aus JSON wiederherstellen",
+    "importHint": "Überschreibt die aktuell gespeicherten Einstellungen.",
+    "restored": "Einstellungen wiederhergestellt ({{count}} API-Keys).",
+    "invalid": "Keine gültige Pension-Pal-Einstellungsdatei."
+  },
+  "auth": {
+    "title_login": "Bei deinem Konto anmelden",
+    "title_register": "Neues Konto erstellen",
+    "title_forgot": "Passwort vergessen",
+    "title_reset": "Neues Passwort setzen",
+    "username": "Benutzername",
+    "usernamePh": "Benutzername eingeben",
+    "usernameOrEmail": "Benutzername oder E-Mail",
+    "usernameOrEmailPh": "Benutzername oder E-Mail eingeben",
+    "email": "E-Mail",
+    "emailPh": "name@beispiel.ch",
+    "password": "Passwort",
+    "passwordPh": "Passwort eingeben",
+    "newPassword": "Neues Passwort",
+    "newPasswordPh": "Passwort (min. 8 Zeichen)",
+    "repeatPassword": "Passwort wiederholen",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen",
+    "forgotLink": "Passwort vergessen?",
+    "forgotHint": "Gib die E-Mail deines Kontos ein. Wir schicken dir einen Link, mit dem du ein neues Passwort setzt.",
+    "forgotSent": "Falls es zu dieser Adresse ein Konto gibt, ist eine E-Mail unterwegs. Der Link gilt 30 Minuten. Schau auch im Spam-Ordner nach.",
+    "resetDone": "Dein Passwort ist geändert. Alle Geräte wurden abgemeldet. Melde dich jetzt neu an.",
+    "pinMismatch": "Die Passwörter stimmen nicht überein.",
+    "submit_login": "Anmelden",
+    "submit_register": "Konto erstellen & anmelden",
+    "submit_forgot": "Link senden",
+    "submit_reset": "Passwort speichern",
+    "working": "Bitte warten…",
+    "noAccount": "Noch kein Konto?",
+    "createOne": "Registrieren",
+    "haveAccount": "Bereits ein Konto?",
+    "signIn": "Anmelden",
+    "backToLogin": "Zurück zur Anmeldung",
+    "requestNewLink": "Neuen Link anfordern",
+    "err_login": "Benutzername/E-Mail oder Passwort ist falsch.",
+    "err_link": "Dieser Link ist ungültig oder abgelaufen.",
+    "err_tooMany": "Zu viele Versuche. Bitte in ein paar Minuten erneut.",
+    "err_uname": "Dieser Benutzername ist schon vergeben.",
+    "err_email": "Diese E-Mail-Adresse wird schon verwendet.",
+    "err_emailOk": "Bitte eine gültige E-Mail-Adresse eingeben.",
+    "err_curPw": "Das aktuelle Passwort stimmt nicht.",
+    "err_tooShort": "Das Passwort braucht mindestens 8 Zeichen.",
+    "err_name": "Der Benutzername braucht 2 bis 100 Zeichen.",
+    "invite": "Einladungscode",
+    "inviteHint": "Pension-Pal ist nur auf Einladung. Den Code bekommst du von jemandem mit Konto.",
+    "err_invite": "Der Einladungscode ist ungültig oder abgelaufen.",
+    "err_tooManyInvites": "Zu viele offene Einladungen. Widerrufe welche oder lass sie ablaufen.",
+    "err_passkey": "Passkey nicht akzeptiert.",
+    "err_challenge": "Die Anfrage ist abgelaufen. Bitte erneut versuchen.",
+    "or": "oder",
+    "passkey": "Mit Passkey anmelden",
+    "passkeyWaiting": "Warte auf Gerät …",
+    "passkeyFailed": "Anmeldung mit Passkey fehlgeschlagen."
+  },
+  "profile": {
+    "title": "Profil",
+    "save": "Profil speichern",
+    "saved": "Profil gespeichert.",
+    "noEmail": "Keine E-Mail hinterlegt. Ohne E-Mail kannst du ein vergessenes Passwort nicht zurücksetzen.",
+    "confirmWithPassword": "Aktuelles Passwort (bestätigt die neue E-Mail)",
+    "changePassword": "Passwort ändern",
+    "currentPassword": "Aktuelles Passwort",
+    "pwHint": "Mindestens 8 Zeichen. Alle anderen Geräte werden danach abgemeldet.",
+    "pwChanged": "Passwort geändert. Andere Geräte sind abgemeldet."
+  },
+  "invites": {
+    "title": "Einladungen",
+    "hint": "Neue Konten gibt es nur mit Einladung. Jeder Code gilt 7 Tage und für ein Konto.",
+    "create": "Einladung erzeugen",
+    "copyLink": "Link kopieren",
+    "revoke": "Widerrufen",
+    "openUntil": "offen bis {{date}}",
+    "usedBy": "benutzt von {{name}} am {{date}}",
+    "expired": "abgelaufen"
+  },
+  "security": {
+    "passkeys": "Passkeys",
+    "passkeysHint": "Face ID, Touch ID, Windows Hello oder Sicherheitsschlüssel — Anmeldung ohne Passwort. Zum Hinzufügen braucht es dein aktuelles Passwort; du bekommst dazu eine Info-Mail.",
+    "deviceName": "Gerätename",
+    "devicePlaceholder": "z. B. MacBook Pro",
+    "addPasskey": "Passkey hinzufügen",
+    "registering": "Warte auf Gerät …",
+    "passkeyAdded": "Passkey hinzugefügt.",
+    "removePasskey": "Passkey entfernen",
+    "noPasskeys": "Noch kein Passkey hinterlegt.",
+    "passkeyCancelled": "Abgebrochen — es wurde kein Passkey angelegt.",
+    "passkeyFailed": "Passkey konnte nicht registriert werden. Passkeys brauchen HTTPS oder localhost.",
+    "passkeyUnsupported": "Dieser Browser unterstützt keine Passkeys.",
+    "unknownDevice": "Unbenanntes Gerät",
+    "addedOn": "hinzugefügt am {{date}}",
+    "lastUsed": "zuletzt benutzt am {{date}}"
+  },
+  "payoutPlan": {
+    "title": "Bezugsplanung: Rente oder Kapital, Staffelung und Anlage",
+    "intro": "Wie wirkt es sich aus, ob du die Pensionskasse als Rente oder Kapital beziehst, die 3a-Konten über mehrere Jahre verteilt auszahlst und die Lebensversicherung (3b) als Kapital oder Rente nimmst? Ausbezahltes Kapital wird angelegt und so entnommen, dass es bis zum Zielalter reicht.",
+    "loading": "Bezugsplanung wird aus dem Profil geladen …",
+    "kpiMonthly": "Monatlich verfügbar ab {{age}}",
+    "kpiDraw": "davon Entnahme aus Kapital / Monat",
+    "kpiTax": "Kapitalbezugssteuer total",
+    "kpiWealth": "Angelegtes Vermögen mit {{age}}",
+    "realNote": "Alle Beträge in heutiger Kaufkraft (Teuerung {{inflation}} % p.a.), vor Einkommenssteuer auf Renten und Entnahmen.",
+    "bvgTitle": "2. Säule (Pensionskasse)",
+    "bvgCapital": "Altersguthaben bei Pensionierung mit {{age}} (CHF)",
+    "bvgCapitalHint": "Wert laut Vorsorgeausweis („Altersguthaben mit 65“ oder zum geplanten Alter). Vorbelegt ist das heutige Guthaben.",
+    "conversionRate": "Umwandlungssatz (%)",
+    "capitalShare": "Kapitalbezug (Rest als Rente)",
+    "bvgResult": "Rente {{pension}} / Monat · Kapital {{capital}}",
+    "pillar3aTitle": "Säule 3a",
+    "pillar3aHint": "Jedes Konto wird in einem Jahr ganz ausbezahlt, frühestens mit {{min}}, nach dem Referenzalter bis {{max}} nur bei weiterer Erwerbstätigkeit. Bezüge im selben Jahr (auch das PK-Kapital) werden zusammen besteuert.",
+    "no3a": "Keine 3a-Konten im Profil.",
+    "balance": "Guthaben heute",
+    "return": "Rendite %",
+    "payoutAge": "Bezug mit",
+    "staggeringSaves": "Gestaffelt sparst du {{amount}} Steuern gegenüber einem Bezug aller Konten mit {{age}}.",
+    "staggeringHint": "Tipp: Verteile die 3a-Bezüge auf verschiedene Jahre und nicht ins Jahr des PK-Kapitalbezugs, das senkt die Progression.",
+    "lifeTitle": "Säule 3b (Lebensversicherung)",
+    "lifeEnabled": "berücksichtigen",
+    "lifeMode_capital": "Kapital",
+    "lifeMode_pension": "Rente",
+    "maturityAge": "Ablauf mit",
+    "lifeCapital": "Kapital (CHF)",
+    "lifePension": "Rente p.a. (CHF)",
+    "lifeTaxNote": "Das Kapital einer rückkaufsfähigen, mit periodischen Prämien finanzierten Lebensversicherung ist bei Ablauf in der Regel einkommenssteuerfrei (Laufzeit mind. 5 Jahre, Abschluss vor 66). Eine Leibrente ist teilweise als Einkommen steuerbar. Bitte die Bedingungen der eigenen Police prüfen.",
+    "startWealth": "Freies Vermögen bei Pensionierung (CHF)",
+    "relationship": "Besteuerung",
+    "relationship_single": "alleinstehend",
+    "relationship_married": "verheiratet",
+    "variant": "Variante PK",
+    "variantBvg": "{{share}} % Kapital",
+    "variantMonthly": "Monatlich verfügbar",
+    "variantPension": "PK-Rente / Monat",
+    "variantNote": "Monatlich verfügbar = AHV + Renten + gleichbleibende Entnahme aus dem angelegten Kapital, sodass es bis {{age}} reicht. Eine Rente läuft lebenslang, Kapital kann bei langer Lebensdauer ausgehen, bleibt aber bei frühem Tod vererbbar.",
+    "chartIncome": "Monatliches Einkommen nach Alter (heutige Franken, Renten nach geschätzter Einkommenssteuer)",
+    "chartWealth": "Angelegtes Vermögen nach Alter (heutige Franken)",
+    "series_ahv": "AHV",
+    "series_bvg": "PK-Rente",
+    "series_life": "3b-Rente",
+    "series_draw": "Entnahme aus Kapital",
+    "series_wealth": "Vermögen",
+    "taxTable": "Kapitalbezugssteuer je Bezugsjahr",
+    "age": "Alter",
+    "gross": "Bezug brutto",
+    "taxFederal": "Bund",
+    "taxCantonMunicipal": "Kanton + Gemeinde",
+    "taxRate": "Satz",
+    "taxSource": "Quelle: ESTV-Steuerrechner, Steuerjahr {{year}}, {{municipality}} ({{canton}}), ohne Kirchensteuer. Zwischen den offiziellen Rasterpunkten interpoliert.",
+    "disclaimer": "Simulation mit den gewählten Annahmen, keine Anlage- oder Steuerberatung. Renditen sind nicht garantiert; Regeln der eigenen Pensionskasse (Kapitalbezug, Anmeldefristen) beachten.",
+    "kpiDrawOdds": "reicht bei Marktschwankungen mit {{percent}} % bis {{age}}",
+    "kpiSafeDraw": "Sichere Entnahme / Monat (90 %)",
+    "kpiSafeDrawHint": "reicht in 9 von 10 simulierten Marktverläufen bis {{age}}",
+    "kpiPortfolio": "Portfolio-Rendite nach Kosten",
+    "kpiPortfolioHint": "Schwankung ±{{vol}} % p.a.",
+    "bucketsTitle": "Anlage des Kapitals (Töpfe)",
+    "bucketsSummary": "Portfolio {{ret}} % p.a. nach Kosten · Schwankung {{vol}} % · Kapital bei Pensionierung ca. {{amount}}",
+    "bucketsHint": "Das ausbezahlte Kapital (PK, 3a, 3b, freies Vermögen) wird nach den Anteilen auf die Töpfe verteilt und jährlich neu ausgeglichen. Die Entnahme kommt anteilig aus allen Töpfen.",
+    "bucketProfile": "Anlage",
+    "bucketShare": "Anteil %",
+    "bucketAmount": "Betrag",
+    "bucketReturn": "Rendite %",
+    "bucketVol": "Schwankung %",
+    "bucketTer": "Kosten (TER) %",
+    "bucketRemove": "Topf entfernen",
+    "bucketAdd": "Topf hinzufügen",
+    "bucketsAssumptions": "Vorgaben sind langfristige Annahmen (nominal, vor Kosten), keine Prognose: Konto 0.5 %, konservativ 2.5 %, ausgewogen 3.5 %, Wachstum 4.5 %, Aktien Welt 6 %. Bewusst unter den historischen Werten der letzten Jahrzehnte; alle Werte änderbar.",
+    "profile_cash": "Konto / Geldmarkt",
+    "profile_conservative": "Strategiefonds konservativ (~25 % Aktien)",
+    "profile_balanced": "Strategiefonds ausgewogen (~50 % Aktien)",
+    "profile_growth": "Strategiefonds Wachstum (~75 % Aktien)",
+    "profile_worldEquity": "Aktien-ETF Welt (z. B. MSCI World)",
+    "profile_custom": "Eigene Annahmen",
+    "series_band": "10–90 % der Marktverläufe",
+    "series_p50": "Median der Marktverläufe",
+    "chartWealthBand": "Linie: Plan mit Durchschnittsrendite · gestrichelt: Median · Fläche: 80 % der simulierten Marktverläufe (1000 Pfade)",
+    "series_planWealth": "Bezugsplan: angelegtes Vermögen",
+    "bvgAnnualCredit": "Altersgutschrift + Zins pro Jahr (CHF)",
+    "bvgAnnualCreditHint": "So viel Guthaben fehlt pro Jahr früherer Pensionierung (bzw. kommt pro Jahr später dazu). Vorbelegt: 18 % des versicherten Lohns (BVG-Minimum ab 55); laut Vorsorgeausweis anpassen.",
+    "partnerIncome": "Einkommen Partner/in im Alter (CHF netto / Monat)",
+    "partnerIncomeHint": "Für den Vergleich mit dem Median eines Rentnerhaushalts; ohne Angabe wird nur dein Einkommen gezählt.",
+    "medianIncomeLine": "Median Pensionierte",
+    "medianTitle": "Vergleich mit dem Median der Pensionierten",
+    "medianAbove": "Bei Pensionierung mit {{age}} hat dein Haushalt ab Beginn der AHV netto etwa {{net}} pro Monat (mit sicherer Entnahme). Das sind {{pct}} über dem Median der Pensionierten ({{median}}). Ohne Kapitalverzehr, also nur Renten nach Steuern: {{pctNoDraw}}.",
+    "medianBelow": "Bei Pensionierung mit {{age}} hat dein Haushalt ab Beginn der AHV netto etwa {{net}} pro Monat (mit sicherer Entnahme). Das sind {{pct}} unter dem Median der Pensionierten ({{median}}). Ohne Kapitalverzehr, also nur Renten nach Steuern: {{pctNoDraw}}.",
+    "cmpAge": "Pensionierung",
+    "cmpAgeValue": "mit {{age}} (AHV ab {{ahv}})",
+    "cmpBridge": "bis AHV / Monat",
+    "cmpPlan": "Plan / Monat",
+    "cmpSafe": "sicher (90 %) / Monat",
+    "cmpVsMedian": "vs. Median",
+    "cmpVsMedianNoDraw": "ohne Kapitalverzehr",
+    "cmpNote": "Netto = AHV, PK- und 3b-Rente nach geschätzter Einkommenssteuer ({{tax}} %) plus Entnahme aus dem Kapital, in heutigen Franken, ohne Krankenkassenprämien (daher etwas zu hoch). AHV frühestens mit 63, gekürzt um 6.8 % pro Jahr Vorbezug; Umwandlungssatz −5 % pro Jahr früher. Bei Frühpensionierung fallen bis 65 AHV-Beiträge für Nichterwerbstätige an (hier nicht abgezogen).{{married}}",
+    "cmpNoteMarried": " Haushalt = dein Einkommen plus das angegebene Einkommen Partner/in; Median eines Paares = 1.5 × Einzelperson.",
+    "medianSources": "Median-Einkommen: verfügbares Einkommen ab 65, {{income}}; ab 65 gibt es keine feinere Gliederung nach Alter. Median-Vermögen (gestrichelte Linie im Vermögensdiagramm, bis 74): {{wealth}}, ohne Pensionskasse und 3a — eine schweizweite Reihe nach Alter gibt es nicht.",
+    "series_medianWealth": "Median Vermögen (Alter)",
+    "wealthOverviewTitle": "Vermögensübersicht bis Alter 100: Kapital oder Rente",
+    "wealthOverviewHint": "Derselbe Bezugsplan (Einstellungen oben) mit 100 % Kapitalbezug der Pensionskasse, mit 100 % Rente und mit Ihrer Wahl. Angelegtes Vermögen in heutigen Franken, ab Pensionierung. Mit Rente bleibt weniger Vermögen, dafür ist das Einkommen höher.",
+    "wealthOverviewMonthly": "CHF {{amount}}/Monat ab AHV-Beginn · Kapitalsteuer CHF {{tax}}",
+    "wealthOverviewEmpty": "Die Übersicht erscheint, sobald die Bezugsplanung geladen ist.",
+    "series_capitalOnly": "100 % Kapital",
+    "series_pensionOnly": "100 % Rente",
+    "bvgBuyInIncluded": "inkl. Einkauf aus der Abfindung mit Zins: {{amount}}",
+    "buyInLock": "Einkauf weniger als 3 Jahre vor dem Kapitalbezug: Die daraus resultierenden Leistungen dürfen nicht als Kapital bezogen werden (BVG Art. 79b Abs. 3), sonst wird der Steuerabzug rückgängig gemacht. Rente wählen oder später beziehen.",
+    "profileChanged": "Das Profil hat andere Werte als diese Planung (Planung speichert ihre Werte): PK-Guthaben {{bvg}}, 3b-Kapital {{life}}, 3b-Rente {{lifePension}} p.a., 3a-Guthaben.",
+    "applyProfile": "Werte aus Profil übernehmen",
+    "lifeCurrency": "Die Lebensversicherung ist in {{currency}} erfasst; die Planung rechnet die Beträge als CHF ohne Umrechnung. Bei Bedarf Kapital und Rente hier in CHF eintragen.",
+    "sourcesTitle": "Herkunft des Anlagekapitals",
+    "sourcesTotal": "angelegt total {{amount}} (heutige Kaufkraft)",
+    "sourcesHint": "Jede Kapitalleistung im Jahr ihrer Auszahlung: brutto, Anteil an der Kapitalbezugssteuer (PK und 3a im selben Jahr werden zusammen besteuert, Steuer nach Betrag aufgeteilt) und netto. «Netto heute» in heutiger Kaufkraft; diese Summe wird nach den Anteilen auf die Töpfe verteilt.",
+    "sourcesWhen": "Alter (Jahr)",
+    "sourcesSource": "Quelle",
+    "sourcesGross": "Brutto",
+    "sourcesTax": "Kapitalsteuer",
+    "sourcesNet": "Netto",
+    "sourcesNetToday": "Netto heute",
+    "sourcesShare": "Anteil",
+    "sourcesCumulative": "kumuliert",
+    "sourcesSum": "Total",
+    "src_bvg": "2. Säule (Pensionskasse)",
+    "src_buyIn": "Einkauf aus der Abfindung (in der PK)",
+    "src_pillar3a": "Säule 3a – {{label}}",
+    "src_life": "Säule 3b (Lebensversicherung)",
+    "src_start": "Freies Vermögen bei Pensionierung",
+    "syncedTitle": "Geänderte Werte aus den Karten übernommen",
+    "synced_bvg": "PK-Guthaben",
+    "synced_pillar3a": "3a-Guthaben total",
+    "synced_lifeCapital": "3b-Kapital",
+    "synced_lifePension": "3b-Rente p.a.",
+    "synced_lifeMaturityAge": "3b-Ablauf mit Alter",
+    "syncUndo": "Rückgängig",
+    "syncOk": "OK",
+    "kpiNoMedian": "kein Median-Vergleich",
+    "kpiAboveMedian": "{{percent}} über Median",
+    "kpiBelowMedian": "{{percent}} unter Median",
+    "kpiMonthlyNet": "netto ca. {{amount}} · {{median}}",
+    "kpiSafeDrawNone": "Kapital reicht in schwachen Märkten nicht",
+    "kpiTaxShare": "{{percent}} der Kapitalbezüge",
+    "kpiWealthReserve": "Reserve über das Zielalter",
+    "kpiWealthUsedUp": "planmässig aufgebraucht",
+    "kpiStatus_good": "gut",
+    "kpiStatus_warn": "knapp",
+    "kpiStatus_bad": "kritisch",
+    "kpiStatus_info": "Info",
+    "kpiWhy_monthly_good": "Ihr Nettoeinkommen liegt auf oder über dem Median gleichaltriger Pensionierter.",
+    "kpiWhy_monthly_warn": "Ihr Nettoeinkommen liegt bis 15 % unter dem Median gleichaltriger Pensionierter.",
+    "kpiWhy_monthly_bad": "Ihr Nettoeinkommen liegt mehr als 15 % unter dem Median gleichaltriger Pensionierter.",
+    "kpiWhy_monthly_info": "Für diesen Haushalt gibt es keinen Median-Vergleich.",
+    "kpiWhy_draw_good": "Mindestens 9 von 10 simulierten Marktverläufen tragen diese Entnahme bis Alter {{age}}.",
+    "kpiWhy_draw_warn": "75–90 % der simulierten Marktverläufe tragen die Entnahme bis Alter {{age}} – wenig Puffer für schwache Börsenjahre.",
+    "kpiWhy_draw_bad": "Weniger als 3 von 4 simulierten Marktverläufen tragen die Entnahme bis Alter {{age}}. Eine tiefere Entnahme oder ein späteres Zielalter erhöht die Chance.",
+    "kpiWhy_draw_info": "Die Erfolgschance wird hier nicht simuliert.",
+    "kpiWhy_safe_good": "Die sichere Entnahme deckt mindestens 90 % der geplanten Entnahme.",
+    "kpiWhy_safe_warn": "Die sichere Entnahme deckt weniger als 90 % der geplanten Entnahme – die Planung setzt auf durchschnittliche Märkte.",
+    "kpiWhy_safe_bad": "In schwachen Marktverläufen reicht das Kapital auch für eine kleine Entnahme nicht bis Alter {{age}}.",
+    "kpiWhy_safe_info": "Die sichere Entnahme wird hier nicht simuliert.",
+    "kpiWhy_tax_info": "Einmalige Steuer auf die Kapitalbezüge (ESTV-Tarif). Bezüge auf mehrere Jahre zu verteilen, senkt sie oft.",
+    "kpiWhy_wealth_good": "Beim Zielalter {{age}} bleibt angelegtes Vermögen als Reserve.",
+    "kpiWhy_wealth_info": "Das Kapital ist mit {{age}} planmässig aufgebraucht – ohne Reserve für ein längeres Leben.",
+    "kpiWhy_portfolio_warn": "Schwankung {{vol}} % pro Jahr (über 12 %): In schlechten Jahren kann das Vermögen deutlich fallen.",
+    "kpiWhy_portfolio_info": "Erwartete Rendite nach Kosten; die Schwankung von {{vol}} % pro Jahr liegt im üblichen Rahmen.",
+    "sched_title": "Auszahlungsplan der Säulen",
+    "sched_hint": "Wann welcher Topf ausbezahlt wird oder die Rente beginnt. Kapitalbezüge im selben Jahr werden zusammen und damit progressiv besteuert – verteilte Jahre sparen Steuern.",
+    "sched_ageYear": "Alter {{age}} ({{year}})",
+    "sched_bvg": "2. Säule (Pensionskasse)",
+    "sched_bvgNote": "Kapital {{share}} %, Rest als Rente – ab der Pensionierung",
+    "sched_life": "Säule 3b (Lebensversicherung)",
+    "sched_capital": "Kapitalbezug {{amount}}",
+    "sched_pensionPa": "Rente {{amount}} pro Jahr",
+    "sched_pensionShort": "Rente",
+    "sched_tax": "Steuer",
+    "sched_today": "heute",
+    "sched_legend": "Punkt = Kapitalbezug, Ring = Rentenbeginn, Betrag brutto in Tausend CHF. Umrandung = Bezugsjahr, rot = mehrere Kapitalbezüge im selben Jahr. Steuer: Kapitalbezugssteuer pro Jahr; fett = Pensionierung.",
+    "sched_clash": "Mehrere Kapitalbezüge im selben Jahr ({{years}}): Sie werden zusammengerechnet und damit höher besteuert. Aus steuerlichen Gründen ist es sinnvoll, den Auszahlungszeitpunkt einer Säule zu verschieben.",
+    "sched_empty": "Keine Auszahlungen aus der 2. Säule, 3a oder 3b erfasst.",
+    "sched_bvgShort": "2. Säule",
+    "sched_lifeShort": "3b LV",
+    "sched_age": "Alter",
+    "sched_yearRow": "20xx"
+  },
+  "cockpit": {
+    "title": "Cockpit: Auswertung & Planung",
+    "subtitle": "Ergebnisse, Grafiken und Tabellen im Inhalt; alle Annahmen, Regler und Szenarien in der Sidebar rechts.",
+    "settings": "Einstellungen",
+    "showSettings": "Einstellungen einblenden",
+    "hideSettings": "Einstellungen ausblenden",
+    "tabScenario": "Szenario",
+    "tabSeverance": "Abfindung",
+    "tabPillars": "Vorsorge",
+    "tabInvestment": "Anlage",
+    "tabNeeds": "Bedarf",
+    "chipRetirement": "Pension mit",
+    "chipInflation": "Teuerung",
+    "chipTax": "Steuer",
+    "chipCapitalShare": "PK-Kapitalbezug",
+    "chipBuyIn": "PK-Einkauf",
+    "card_kpis": "Kennzahlen der Bezugsplanung",
+    "card_sources": "Herkunft des Anlagekapitals",
+    "card_median": "Vergleich mit dem Median · Pensionierung 60–66",
+    "card_variants": "Varianten: Kapital oder Rente",
+    "card_incomeDistribution": "Einkommensverteilung im Alter",
+    "card_stress": "BVG-Rente mit vs. ohne Tilgung (Stress-Test)",
+    "collapseAll": "Alle einklappen",
+    "expandAll": "Alle ausklappen",
+    "resetLayout": "Anordnung zurücksetzen",
+    "dragCard": "{{title}} verschieben",
+    "dragHint": "Ziehen zum Verschieben (oder Leertaste, dann Pfeiltasten)"
+  }
+}

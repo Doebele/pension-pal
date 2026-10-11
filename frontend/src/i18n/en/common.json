@@ -1,0 +1,1347 @@
+{
+  "app": {
+    "name": "PensionPal",
+    "tagline": "Retirement Planner"
+  },
+  "nav": {
+    "dataEntrySection": "Data Entry",
+    "analysisSection": "Analysis & Evaluation",
+    "personal": "1) Personal Information",
+    "ahv": "2) First Pillar (AHV)",
+    "bvg": "3) Second Pillar (BVG)",
+    "pillar3": "4) Third Pillar (3a/3b)",
+    "lifeInsurance": "5) Life Insurance",
+    "severance": "6) Severance",
+    "assets": "7) Asset Overview",
+    "analysis": "Analysis & Evaluation",
+    "montecarlo": "Monte Carlo",
+    "documents": "Document Import",
+    "knowledge": "Knowledge",
+    "importExport": "Import / Export",
+    "csvExport": "CSV Export",
+    "csvImport": "CSV Import",
+    "cockpit": "Cockpit (planning)"
+  },
+  "rail": {
+    "collapseSidebar": "Collapse sidebar",
+    "expandSidebar": "Expand sidebar",
+    "comfort": "Comfort",
+    "pro": "Pro",
+    "density": "Density",
+    "lightMode": "Light",
+    "darkMode": "Dark",
+    "theme": "Theme",
+    "language": "Language",
+    "menu": "Menu",
+    "closeMenu": "Close menu"
+  },
+  "backend": {
+    "label": "Backend",
+    "checking": "checking...",
+    "connected": "connected",
+    "offline": "offline"
+  },
+  "user": {
+    "account": "Account",
+    "logout": "Sign out",
+    "switchUser": "Switch account",
+    "confirmSwitch": "You'll be signed out and can sign in with a different account.",
+    "switchConfirmBtn": "Sign out & switch",
+    "confirmLogoutTitle": "Sign out?",
+    "confirmLogoutBody": "Are you sure you want to sign out?",
+    "confirmLogoutYes": "Yes, sign out",
+    "confirmLogoutInProgress": "Signing out...",
+    "confirmLogoutNo": "No, stay",
+    "settings": "Settings"
+  },
+  "buttons": {
+    "cancel": "Cancel"
+  },
+  "common": {
+    "pleaseSelect": "Please select",
+    "notSet": "Not yet entered",
+    "save": "Save",
+    "saved": "Saved",
+    "noChanges": "No changes",
+    "saveChanges": "Save changes",
+    "saveDetails": "Save details",
+    "remove": "Remove",
+    "years": "years",
+    "open": "Open",
+    "autoCalculated": "Automatically calculated",
+    "viewKnowledgeEntry": "View knowledge entry"
+  },
+  "options": {
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other"
+    },
+    "maritalStatus": {
+      "single": "Single",
+      "married": "Married",
+      "divorced": "Divorced",
+      "widowed": "Widowed",
+      "concubinage": "Cohabiting"
+    },
+    "livingSituation": {
+      "rent": "Rented apartment",
+      "own": "Owner-occupied home",
+      "rentShort": "Rent"
+    },
+    "propertyUsage": {
+      "owner_occupied": "Owner-occupied",
+      "rented_out": "Rented out",
+      "mixed": "Mixed"
+    }
+  },
+  "personal": {
+    "intro": "Basis for all pension calculations (AHV/BVG/3a) and projection up to age 100.",
+    "birthDate": {
+      "label": "Date of birth",
+      "help": "The date of birth determines age, reference age and projection horizon. You can find it on official ID documents.",
+      "errorInvalid": "Invalid date of birth.",
+      "errorFuture": "Date of birth is in the future.",
+      "errorMinAge": "Date of birth must be at least 18 years ago."
+    },
+    "gender": {
+      "label": "Gender",
+      "help": "This entry applies globally to AHV and other pension calculations."
+    },
+    "maritalStatus": {
+      "label": "Marital status",
+      "help": "Relevant for AHV/BVG survivor benefits."
+    },
+    "livingSituation": {
+      "label": "Living situation",
+      "help": "This entry drives cost-of-living and asset calculations."
+    },
+    "taxDomicile": {
+      "label": "Canton of residence / tax domicile",
+      "help": "This canton is used globally for tax calculations."
+    },
+    "marriageYear": {
+      "label": "Year of marriage",
+      "help": "Year of marriage or start of registered partnership."
+    },
+    "divorceYear": {
+      "label": "Year of divorce",
+      "help": "Only required for marital status Divorced."
+    },
+    "marriageYears": {
+      "label": "Years of marriage",
+      "help": "Calculated automatically from year of marriage and year of divorce.",
+      "formulaDivorce": "Formula: year of divorce - year of marriage",
+      "formulaCurrent": "Formula: current year - year of marriage"
+    },
+    "rentMonthly": {
+      "label": "Monthly rent (CHF) - for cost-of-living calculation",
+      "help": "The rent is used for budget and asset development. Source is your current rental contract."
+    },
+    "rentYearly": {
+      "label": "Yearly rent (CHF) - optional",
+      "help": "Yearly rent complements the monthly figure for plausibility checks. Leave empty if unknown."
+    },
+    "propertyName": {
+      "label": "Property name",
+      "help": "The property name is used for clear identification in the analysis."
+    },
+    "propertyUsage": {
+      "label": "Usage",
+      "help": "Usage determines whether owner occupancy or rental enters the cash-flow logic."
+    },
+    "propertyValue": {
+      "label": "Estimated property value (CHF) - for assets",
+      "help": "The market value is used for the net-asset calculation."
+    },
+    "propertyMortgage": {
+      "label": "Mortgage (CHF)",
+      "help": "The mortgage reduces net assets and affects expenses."
+    },
+    "propertyLandArea": {
+      "label": "Plot area (m2)",
+      "help": "The area provides context for the property."
+    },
+    "additionalProperties": {
+      "title": "Additional properties",
+      "add": "Add another property",
+      "item": "Property {{index}}",
+      "labelPlaceholder": "Name (e.g. holiday apartment)",
+      "rentalUnit": "Rental unit",
+      "valuePlaceholder": "Estimated value (CHF)",
+      "mortgagePlaceholder": "Mortgage (CHF)",
+      "rentalIncomePlaceholder": "Monthly rental income (CHF) - required for landlords"
+    }
+  },
+  "cards": {
+    "personal": "1. Personal Information",
+    "ahv": "2. First Pillar (AHV)",
+    "bvg": "3. Second Pillar (BVG)",
+    "pillar3": "4. Third Pillar 3a",
+    "lifeInsurance": "5. Third Pillar 3b (Life Ins.)",
+    "severance": "6. Severance",
+    "assets": "7. Asset Overview"
+  },
+  "dashboard": {
+    "title": "Pension Overview",
+    "subtitle": "Structured pension flow with central document management.",
+    "toasts": {
+      "lvAnalyzed": "Life insurance analysed",
+      "lvImportFailed": "Life insurance import failed",
+      "importNotPossible": "Import not possible.",
+      "mappingIncomplete": "Mapping incomplete",
+      "removeDuplicates": "Please remove duplicate target-field mappings.",
+      "lvAccepted": "Life insurance suggestion accepted",
+      "lvAcceptedMessage": "Imported policy data was applied to the form.",
+      "importSuccess": "Import successful",
+      "importUncertain": "Import uncertain",
+      "previewAvailable": "Preview available. Map target field locally.",
+      "mapManually": "Please map and verify values manually.",
+      "importFailed": "Import failed",
+      "ahvAnalyzed": "AHV import analysed",
+      "ahvImportFailed": "AHV import failed",
+      "removeDuplicatesBeforeAccept": "Please remove duplicate target-field mappings before accepting the suggestion.",
+      "ahvAccepted": "AHV suggestion accepted",
+      "ahvAcceptedMessage": "The imported contribution data was applied to the table.",
+      "ahvDiscarded": "AHV suggestion discarded",
+      "ahvDiscardedMessage": "Imported suggestions were not applied.",
+      "checkOnly": "Review only",
+      "checkOnlyMessage": "Only secondary fields were selected. No automatic application.",
+      "valueInserted": "Value inserted",
+      "valueInsertedMessage": "{{count}} OCR field(s) applied to {{target}}.",
+      "secondaryOpen": "Secondary fields open",
+      "secondaryOpenMessage": "{{count}} field(s) marked for review.",
+      "fileInvalid": "File invalid"
+    },
+    "profileLoadError": "Profile could not be loaded live. Working with local state.",
+    "closeImportAria": "Close import mapping",
+    "importMappingTitle": "Import mapping: parse & preview",
+    "importMappingSubtitle": "Check the extracted fields and confirm the application.",
+    "zipChecking": "Checking postal code...",
+    "zipNotFound": "Postal code not uniquely found. Please check town/canton manually."
+  },
+  "bvg": {
+    "providerFallback": "2nd pillar / BVG pension fund",
+    "asOf": "As of {{date}}",
+    "intro": "The following key figures feed directly into the pension calculation. Values can be adjusted manually if needed (e.g. without PDF import).",
+    "summaryHelp": "This value feeds directly into the BVG projection. You can find it on your BVG pension fund certificate.",
+    "moreDetails": "Show further details",
+    "detailsNote": "These detail fields mirror the figures from the BVG pension fund certificate (e.g. UBS). They can be pre-filled via PDF import or entered manually. The actual calculation primarily uses the key figures in the upper section.",
+    "fields": {
+      "annualSalary": "Annual salary",
+      "insuredSalaryTotal": "Total insured salary",
+      "currentOldageCapital": "Retirement capital (total)",
+      "bvgOldageCapital": "BVG retirement capital",
+      "vestedBenefitsTotal": "Vested benefits",
+      "wefAvailable": "WEF available",
+      "asOfDate": {
+        "label": "Reference date",
+        "help": "The reference date shows which certificate the data is from. It appears at the top of the pension certificate."
+      },
+      "coordinationDeduction": {
+        "label": "Coordination deduction",
+        "help": "The coordination deduction affects the insured salary in the BVG. You can find it on the certificate or in the regulations."
+      },
+      "insuredSalaryRentenplan": {
+        "label": "Insured salary pension plan",
+        "help": "This salary shows the insured part in the pension plan. Source is the detailed BVG pension fund certificate."
+      },
+      "insuredSalaryBonusplan": {
+        "label": "Insured salary bonus plan",
+        "help": "This value captures the insured bonus part. It is shown as a separate plan on the pension certificate."
+      },
+      "maxBuyinTotal": {
+        "label": "Max. buy-in total",
+        "help": "The maximum buy-in shows possible tax-effective contributions. You can find it on the pension certificate."
+      },
+      "maxBuyinRentenplan": {
+        "label": "Max. buy-in pension plan",
+        "help": "This buy-in headroom applies to the pension-plan portion. The value appears on the detailed certificate."
+      },
+      "maxBuyinBonusplan": {
+        "label": "Max. buy-in bonus plan",
+        "help": "This value shows possible buy-ins in the bonus plan. It is documented in the fund regulations or pension certificate."
+      }
+    },
+    "overview": {
+      "annualSalary": "Annual salary",
+      "oldageCapital": "Retirement capital",
+      "bvgCapital": "BVG capital"
+    }
+  },
+  "severance": {
+    "intro": "Enter or calculate the severance payment: choose between a fixed amount or a formula model.",
+    "entryType": "Entry type",
+    "exact": "Exact",
+    "calculate": "Calculate",
+    "amount": {
+      "label": "Severance amount (CHF)",
+      "help": "Total gross/net amount as the starting value for allocation and scenarios."
+    },
+    "formulaModel": {
+      "label": "Calculation model",
+      "help": "Choose the model for the manual severance calculation.",
+      "tenureSalaryDays": "Tenure x salary x day factor",
+      "or339bMonths": "CO 339b (monthly salaries)",
+      "referenceAgeFormula": "Reference-age formula"
+    },
+    "lastSalary": {
+      "label": "Last annual salary (CHF)",
+      "help": "Base salary for all calculation models."
+    },
+    "calculatedAmount": "Calculated amount:",
+    "employmentStart": {
+      "label": "Employed from",
+      "help": "Start date for calculating years of service."
+    },
+    "employmentEnd": {
+      "label": "Employed until",
+      "help": "End date for calculating years of service."
+    },
+    "dayFactor": {
+      "label": "Day factor",
+      "help": "Factor per year of service (1-60), default 30."
+    },
+    "monthFactor": {
+      "label": "Month factor",
+      "help": "Number of monthly salaries per CO 339b (2-8)."
+    },
+    "isGross": "Amount is gross (tax deduction active)",
+    "taxDomicile": "Tax domicile (from Personal Information):",
+    "notSet": "not set",
+    "maturity": {
+      "label": "Due date (month/year)",
+      "help": "The due date controls the timing of tax and allocation calculations.",
+      "month": "Month",
+      "year": "Year"
+    },
+    "taxRate": "Tax rate (cantonal): {{rate}}%",
+    "taxAtMaturity": "Tax amount at maturity: CHF {{amount}}",
+    "netLimit": "Net limit for allocation: CHF {{amount}}",
+    "overview": {
+      "gross": "Severance gross",
+      "net": "Net (after tax)",
+      "maturity": "Due date"
+    }
+  },
+  "assets": {
+    "tabs": {
+      "cash": "Private assets",
+      "investments": "Investments",
+      "ariaLabel": "Asset overview tabs"
+    },
+    "cashIntro": "Enter accounts and cash holdings per row. All values are normalised to CHF.",
+    "investmentsIntro": "Enter ETFs, stocks, savings plans and real-estate ETFs separately.",
+    "accountTypes": {
+      "bank": "Bank account",
+      "cash": "Cash",
+      "depot": "Brokerage account",
+      "pillar3a": "Pillar 3a account",
+      "vested_benefits": "Vested benefits account",
+      "other": "Other"
+    },
+    "columns": {
+      "account": {
+        "label": "Account",
+        "help": "Account name for clear identification. Use the name from your account or brokerage statement."
+      },
+      "type": {
+        "label": "Type",
+        "help": "The type categorises the assets for analyses. Choose per account kind."
+      },
+      "amount": {
+        "label": "Amount",
+        "help": "The amount feeds into the CHF total. Value from the current account balance."
+      },
+      "currency": {
+        "label": "Currency",
+        "help": "The currency drives the conversion to CHF for the overall view."
+      }
+    },
+    "accountPlaceholder": "e.g. main account UBS",
+    "accountTypeAria": "Account type",
+    "removeRowAria": "Remove row",
+    "addRow": "+ Add row",
+    "totalCash": "Total private assets (CHF): {{amount}}",
+    "totalInvestments": "Total investments (CHF): {{amount}}",
+    "fields": {
+      "etf": {
+        "label": "ETF (CHF)",
+        "help": "ETF holdings show the liquid investment share. Source is your brokerage statement."
+      },
+      "stocks": {
+        "label": "Stocks (CHF)",
+        "help": "Stock values affect return and risk in scenarios. Based on your portfolio balance."
+      },
+      "savings": {
+        "label": "Savings plans (CHF)",
+        "help": "Savings plans capture regular investments. Source is your plan in the bank or broker portal."
+      },
+      "realEstate": {
+        "label": "Real-estate ETF (CHF)",
+        "help": "Real-estate ETFs are shown separately for the asset structure."
+      }
+    },
+    "overview": {
+      "cash": "Private assets",
+      "investments": "Investments"
+    }
+  },
+  "ahv": {
+    "intro": "Enter the AHV key figures. The expected AHV pension is calculated automatically and shown as a result.",
+    "importStructure": "Import structure: year | annual income | total | age | AHV pension share",
+    "chooseFile": "Choose file",
+    "parsing": "Parsing...",
+    "parsePreview": "Parse & preview",
+    "openPreview": "Open preview",
+    "selectedFile": "Selected: {{name}}",
+    "keyData": "Key data",
+    "referenceAge": "Reference age: {{age}}",
+    "notAvailable": "not available",
+    "contributionYearsLine": "Contribution years: {{years}}",
+    "expectedPension": "Expected AHV pension",
+    "perYear": "CHF {{amount}} p.a.",
+    "perMonth": "approx. CHF {{amount}} per month",
+    "modeAria": "AHV input mode",
+    "approximate": "Approximate",
+    "exact": "Exact",
+    "profileAgeAria": "Current profile age as reference",
+    "income": {
+      "label": "Estimated average annual income (CHF)",
+      "help": "This income is the most important basis for the AHV estimate. Sources are your AHV statement, payslips or your contribution history."
+    },
+    "plannedRetirementAge": {
+      "label": "Planned retirement age",
+      "help": "Choose your planned retirement age between 58 and 70. The age is validated against your current profile age."
+    },
+    "retirementAgeHint": "The retirement age is between 58 and 70 and must be at least your profile age ({{minAge}}+).",
+    "ageYears": "{{age}} years",
+    "contributionEstimate": {
+      "label": "Contribution estimate p.a. (CHF)",
+      "help": "If a contribution history exists, the estimate is calculated automatically. Without history you can enter the value manually."
+    },
+    "contributionYears": {
+      "label": "Contribution years (estimate)",
+      "help": "Contribution years affect the entitlement to a full AHV pension. With gaps in the contribution record the pension is lower."
+    },
+    "exactRetirementAge": {
+      "label": "Planned retirement age",
+      "help": "Sets the AHV start as in payout planning: at retirement, at the earliest 2 years before the reference age. Retiring earlier does not by itself reduce the AHV, because contributions continue until the reference age."
+    },
+    "exactIncome": {
+      "label": "Estimated average annual income (CHF)",
+      "help": "This value stays in sync as reference for exact and approximate calculation."
+    },
+    "earlyYears": {
+      "label": "Early withdrawal (years before reference age)",
+      "help": "Follows from the planned retirement age: AHV starts at retirement, at the earliest 2 years before the reference age. Each year of early withdrawal cuts the pension by 6.8 % for life."
+    },
+    "lateYears": {
+      "label": "Deferral (years after reference age)",
+      "help": "Follows from the planned retirement age: retiring after the reference age defers the AHV (at most 5 years). Each year raises the pension by 5.2 %."
+    },
+    "import": {
+      "closeAria": "Close import preview",
+      "title": "AHV import: parse & preview",
+      "subtitle": "Check mapping and validation, and correct data before importing.",
+      "summary": "Import summary",
+      "totalRows": "Total rows: {{count}}",
+      "successRows": "Successful: {{count}}",
+      "failedRows": "Failed: {{count}}",
+      "manualEdit": "Enable manual correction",
+      "manualEditHint": "With the mode disabled, the preview is read-only.",
+      "fieldMapping": "Field mapping",
+      "confidence": "Match: {{percent}}%",
+      "duplicateTitle": "Duplicate target-field mapping",
+      "duplicateHint": "Accepting is locked until every source field is mapped uniquely.",
+      "detected": "Detected: {{count}}",
+      "avgIncome": "Avg income (calc): CHF {{amount}}",
+      "totalContributions": "Total contributions (calc): CHF {{amount}}",
+      "discard": "Discard",
+      "accept": "Accept suggestion ({{count}})",
+      "rowValid": "Row plausible",
+      "yearInvalid": "Year invalid",
+      "incomeInvalid": "Income missing/invalid",
+      "totalInvalid": "Total missing/invalid"
+    },
+    "fields": {
+      "year": "Year",
+      "annualIncome": "Annual income (CHF)",
+      "total": "Total (CHF)",
+      "age": "Age",
+      "rentShare": "AHV pension share"
+    },
+    "overview": {
+      "expectedPension": "Expected AHV pension p.a.",
+      "avgIncome": "Avg annual income"
+    }
+  },
+  "ahvTable": {
+    "title": "Contribution history (year by year)",
+    "addRow": "Add row",
+    "validation": "Validation",
+    "action": "Action",
+    "ok": "OK",
+    "error": "Error",
+    "year": {
+      "label": "Year",
+      "help": "The calendar year of the reported contribution data. You can find it on the IK statement."
+    },
+    "income": {
+      "label": "Annual income",
+      "help": "Relevant income for the respective year. Source is the AHV account statement or salary certificate."
+    },
+    "total": {
+      "label": "Total",
+      "help": "Sum of the relevant contributions in the year. Used for estimates."
+    },
+    "age": {
+      "label": "Age",
+      "help": "Age at year end, for chronological context of the contribution data."
+    },
+    "rentShare": {
+      "label": "AHV pension share",
+      "help": "Optional share for internal traceability per year."
+    }
+  },
+  "pillar3": {
+    "tabsAria": "Pillar 3a tabs",
+    "tabPayout": "Payout options",
+    "tabMotion": "Motion Ettlin / specification",
+    "intro": "Payout-oriented planning for pillar 3a: accounts, duration, tax model and expected net payout value.",
+    "securities": {
+      "label": "Securities / ETFs / funds * (CHF)",
+      "help": "This amount shows your current 3a investment volume. You can find it on your brokerage or 3a account statement.",
+      "placeholder": "e.g. 80 000"
+    },
+    "realEstateEquity": {
+      "label": "Real-estate equity (rental properties) (CHF)",
+      "help": "Equity in rental properties is captured for the asset view. Sources are financing or tax documents.",
+      "placeholder": "e.g. 200 000"
+    },
+    "accountCount": {
+      "label": "Number of pillar 3a accounts",
+      "help": "Multiple 3a accounts enable staggered withdrawals and lower progression. You can find the number in your 3a contracts.",
+      "legend": "Select number of pillar 3a accounts",
+      "one": "One account",
+      "two": "Two accounts",
+      "three": "Three accounts"
+    },
+    "accountBalance": {
+      "label": "Account {{index}} balance (CHF)",
+      "help": "Balance per 3a account as basis for projection and tax planning. Value from the latest 3a statement."
+    },
+    "accountReturn": {
+      "label": "Return (%)",
+      "help": "Expected annual return for this account. Use conservative values per your investment strategy."
+    },
+    "accountYears": {
+      "label": "Duration / years",
+      "help": "Number of years until withdrawal or retirement. This drives the compound-interest projection."
+    },
+    "taxModel": {
+      "label": "Tax model (placeholder)",
+      "help": "The model controls how the capital-withdrawal tax is estimated. Cantonal tariffs apply for final values.",
+      "flat": "One-off taxation (flat)",
+      "progressive": "Progressive (placeholder)"
+    },
+    "taxCanton": {
+      "label": "Canton (tax template)",
+      "help": "The canton significantly affects the withdrawal tax. Use the expected canton of residence at withdrawal."
+    },
+    "taxRate": {
+      "label": "Tax rate (%)",
+      "help": "This rate is used for the tax projection. If you know the target value you can override it manually."
+    },
+    "totalCurrent": "3a total balance today",
+    "totalProjected": "3a payout value (projected)",
+    "estimatedTax": "Estimated tax burden",
+    "netAfterTax": "Net after tax",
+    "monthlySavings": {
+      "label": "Monthly savings rate * (CHF)",
+      "help": "The monthly savings rate determines future 3a growth. Based on standing order or planned contributions."
+    },
+    "baseReturn": {
+      "label": "Expected base return (%)",
+      "help": "Base expectation for the projection of all 3a accounts. Align with your risk profile and long-term market expectations."
+    },
+    "overview": {
+      "accounts": "3a accounts ({{count}})",
+      "savingsRate": "Savings rate",
+      "perMonth": "CHF {{amount}}/month"
+    }
+  },
+  "motionEttlin": {
+    "title": "Motion Ettlin / specification",
+    "summary": "Planned retirement: {{year}} (P), phase:",
+    "phases": {
+      "aufbau": "Accumulation",
+      "ausgleich": "Rebalancing",
+      "finalcheck": "Final check",
+      "bezug": "Withdrawal"
+    },
+    "signal": "3a signal:",
+    "signalActive": "active",
+    "signalIncomplete": "still incomplete",
+    "smartContribution": "Smart contribution",
+    "plannedContribution": "Planned contribution (CHF)",
+    "netIncome": "Net income (CHF)",
+    "hasPk": "Pension fund present",
+    "yes": "Yes",
+    "no": "No",
+    "recommendation": "Recommendation: contribute to account {{account}}.",
+    "payoutCalendar": "Time-stacking payout calendar",
+    "account": "Account {{label}}",
+    "plannedPayout": "Planned withdrawal: {{year}}",
+    "pkYearsPlaceholder": "PK withdrawal years: 2033, 2035",
+    "partnerYearsPlaceholder": "Partner withdrawal years: 2031, 2034",
+    "alert": "Alert: {{message}}",
+    "providerShortlist": "Provider shortlist & documentation",
+    "shortlist": "Shortlist: {{list}}",
+    "proof": "Documented: {{value}}",
+    "riskManagement": "Risk management",
+    "liquidityPlaceholder": "Liquidity reserve (months)",
+    "securitiesYes": "Securities 3a: yes",
+    "securitiesNo": "Securities 3a: no",
+    "rulesCheckPlaceholder": "Last rules check",
+    "liquidity": "Liquidity: {{value}}",
+    "liquidityLow": "reserve < 12 months",
+    "liquidityOk": "ok",
+    "marketRisk": "Market risk: {{value}}",
+    "marketRiskTriggered": "P-5 reached",
+    "marketRiskNone": "no trigger",
+    "rules": "Rules: {{value}}",
+    "rulesDue": "check due",
+    "rulesCurrent": "up to date"
+  },
+  "life": {
+    "intro": "Enter contract-based life insurance. Document import supports automatic extraction of capital and pension start from PDF policies.",
+    "insuranceType": {
+      "label": "Insurance type",
+      "help": "This entry controls whether capital or annuity values are used for planning. You can find the type on your policy.",
+      "renten": "Annuity insurance",
+      "kapital": "Capital insurance",
+      "gemischt": "Mixed insurance",
+      "rentenShort": "Annuity",
+      "kapitalShort": "Capital",
+      "gemischtShort": "Mixed"
+    },
+    "insurer": {
+      "label": "Insurer",
+      "help": "The insurer helps assign policies and benefits. This information appears on the policy and premium invoice.",
+      "placeholder": "Enter insurer",
+      "other": "Other"
+    },
+    "policyNumber": {
+      "label": "Policy number",
+      "help": "The policy number uniquely identifies the policy."
+    },
+    "insuredName": {
+      "label": "Insured name",
+      "help": "Name per the policy header."
+    },
+    "currency": {
+      "label": "Currency",
+      "help": "Choose the calculation currency for the insurance."
+    },
+    "capitalSum": {
+      "label": "Capital sum ({{currency}})",
+      "help": "The capital sum shows the agreed benefit at maturity or event. You can find it on the policy under benefit/capital.",
+      "placeholder": "e.g. 100 000"
+    },
+    "annualRent": {
+      "label": "Annual annuity payment ({{currency}})",
+      "help": "This value is used for the expected annual cash flow. Based on the annuity benefit shown on the policy.",
+      "placeholder": "e.g. 12 000"
+    },
+    "entryAge": {
+      "label": "Entry age",
+      "help": "The entry age affects duration and assumptions. It appears at the contract start of your insurance.",
+      "placeholder": "e.g. 45"
+    },
+    "surrenderValue": {
+      "label": "Surrender value ({{currency}})",
+      "help": "The surrender value is the amount upon early termination. It appears on statements or from the insurer.",
+      "placeholder": "e.g. 30 000"
+    },
+    "monthlyPremium": {
+      "label": "Monthly premium ({{currency}})",
+      "help": "Regular monthly premium from the policy."
+    },
+    "sumAtDeath": {
+      "label": "Death benefit ({{currency}})",
+      "help": "Benefit in case of death per the contract."
+    },
+    "maturityDate": {
+      "label": "Maturity date",
+      "help": "Date of contract maturity (if available)."
+    },
+    "annualPremium": {
+      "label": "Annual premium ({{currency}})",
+      "help": "The premium shows your regular annual expense. It appears on the premium invoice and policy."
+    },
+    "maturityYear": {
+      "label": "Maturity year",
+      "help": "The maturity year defines the benefit date in the plan. You can find it in your policy's contract data."
+    },
+    "monthlyPension": {
+      "label": "Monthly pension at retirement ({{currency}})",
+      "help": "This payment flows into retirement planning as monthly income. Based on the guaranteed or expected annuity benefit."
+    },
+    "capitalPayout": {
+      "label": "Capital benefit at maturity ({{currency}})",
+      "help": "This benefit is counted as a one-off payout. You can find the value on the policy under maturity benefit."
+    },
+    "pdfImport": "PDF import life insurance",
+    "parsePreview": "Parse & preview",
+    "openPreview": "Open preview",
+    "projectedShare": "Projected monthly share in retirement: {{currency}} {{amount}}/month",
+    "taxNote": "Tax note: capital benefits are often taxed at a lower rate in Switzerland.",
+    "import": {
+      "closeAria": "Close import preview",
+      "title": "Import preview life insurance",
+      "subtitle": "Review and accept extracted values",
+      "detected": "Detected: {{count}} fields",
+      "problems": "Problems: {{count}}",
+      "manualEdit": "Enable manual correction",
+      "duplicateMapping": "Duplicate target-field mapping present. Please correct the mapping.",
+      "missingSurrender": "Surrender value not detected. Please enter the value manually and verify.",
+      "enterManually": "Enter value manually",
+      "autoDetected": "Detected automatically",
+      "confidenceLine": "Match: {{percent}}% · Extracted: {{value}}",
+      "uncertain": "Detection uncertain or empty. Please check/verify manually.",
+      "mediumQuality": "Medium match quality. Verification recommended (especially below 40%).",
+      "autoApply": "Apply auto-correction",
+      "discard": "Discard",
+      "accept": "Accept suggestion",
+      "confirmUnverified": "At least one OCR value is uncertain/overridden. Please verify manual entries. Accept anyway?",
+      "ok": "OK",
+      "likely": "Likely",
+      "error": "Error"
+    },
+    "fields": {
+      "insurer": "Insurer",
+      "policyNumber": "Policy number",
+      "insuredName": "Insured name",
+      "capitalPayoutAtMaturity": "Capital benefit at maturity",
+      "annualPensionChf": "Annual pension",
+      "annualPremium": "Annual premiums",
+      "monthlyPremium": "Monthly premium",
+      "surrenderValue": "Surrender value",
+      "sumAtDeath": "Death benefit",
+      "maturityDate": "Maturity date",
+      "currency": "Currency"
+    },
+    "overview": {
+      "type": "Life insurance / type",
+      "portfolioValue": "Portfolio value (proj.)",
+      "sharePerYear": "Share per year",
+      "perMonthShort": "CHF {{amount}}/mo"
+    }
+  },
+  "login": {
+    "title": "SwissPensionCalc Sign-in",
+    "apiStatus": "API connection: {{status}}",
+    "apiOnline": "reachable",
+    "apiOffline": "not reachable",
+    "disclaimerTitle": "Important note (demo)",
+    "disclaimerBody1": "This application is for demonstration only and constitutes no recommendation, assurance or commitment.",
+    "disclaimerBody2": "Please do not enter personal, sensitive or private data.",
+    "disclaimerAccept": "Note read and understood"
+  },
+  "montecarlo": {
+    "title": "Monte Carlo simulation",
+    "subtitle": "Probability distribution of the real final capital (inflation-adjusted).",
+    "runs": "Simulation runs",
+    "years": "Years",
+    "startCapital": "Starting capital (CHF)",
+    "contribution": "Contribution p.a. (CHF)",
+    "expectedReturn": "Expected return (%)",
+    "volatility": "Volatility (%)",
+    "inflation": "Inflation (%)",
+    "p10": "P10 (pessimistic)",
+    "p50": "P50 (median)",
+    "p90": "P90 (optimistic)",
+    "distribution": "Distribution of simulation results",
+    "runCount": "Number of runs"
+  },
+  "commonUi": {
+    "hideDetails": "Hide further details"
+  },
+  "upload": {
+    "defaultLabel": "Document import",
+    "onlyPdfJpgPng": "Only PDF, JPG or PNG files are allowed.",
+    "tooLarge": "File is too large. Maximum {{max}} MB allowed.",
+    "ariaSuffix": "{{label}} via drag and drop or file selection",
+    "maxNote": "{{label}}: {{max}} MB max",
+    "uploading": "Importing document...",
+    "globalOnlySupported": "Only PDF, CSV or image files (JPG/PNG) can be imported globally.",
+    "globalTooLarge": "File too large. Maximum {{max}} MB.",
+    "filesReady": "{{count}} files ready",
+    "manualUpload": "Upload manually",
+    "dropHere": "Drop PDF/CSV/image here"
+  },
+  "importExport": {
+    "title": "Import / export CSV",
+    "subtitle": "Exchange data between applications (CSV import/export with validation).",
+    "submenu": "Import/export data",
+    "exportTitle": "📥 CSV export",
+    "exportSubtitle": "Download all data as a file",
+    "importTitle": "📤 CSV import",
+    "importSubtitle": "Load data from a CSV file",
+    "securityTitle": "Security & compatibility",
+    "security1": "- UTF-8 CSV with semicolon separation",
+    "security2": "- Header validation + version check (exportVersion >= 1.0)",
+    "security3": "- File size limited to max. 10MB",
+    "security4": "- Numeric fields are validated before import",
+    "exportSuccessTitle": "Exported successfully",
+    "exportSuccessMessage": "CSV file was created and downloaded.",
+    "importSuccessTitle": "Data imported successfully",
+    "importSuccessMessage": "Applied: {{sections}}.",
+    "noSections": "no sections reported",
+    "sections": {
+      "personal": "Personal information",
+      "ahv": "AHV",
+      "assets": "Assets",
+      "property": "Property",
+      "pension_fund": "BVG",
+      "third_pillar": "3rd pillar",
+      "life_insurance": "Life insurance",
+      "severance": "Severance"
+    },
+    "settingsTitle": "⚙️ Back up settings",
+    "settingsSubtitle": "Back up/restore settings incl. API keys as JSON",
+    "security5": "- Settings backup (JSON) contains API keys in plain text – store it safely"
+  },
+  "csvExport": {
+    "title": "Export all data",
+    "subtitle": "Download the project and all calculations as CSV.",
+    "format1": "- Format: CSV (semicolon as column separator)",
+    "format2": "- Character set: UTF-8",
+    "format3": "- Contains metadata (`timestamp`, `exportVersion`) for compatibility",
+    "success": "Export successful ({{timestamp}}).",
+    "failed": "Export failed.",
+    "close": "Close",
+    "start": "Start CSV export",
+    "inProgress": "Exporting..."
+  },
+  "csvImport": {
+    "title": "Import CSV data",
+    "subtitle": "Load data from another system into this application.",
+    "chooseFile": "Choose CSV file (.csv)",
+    "missingFields": "Behaviour for missing fields",
+    "modeError": "Show errors (strict)",
+    "modeSkip": "Skip missing fields",
+    "progress": "Progress: {{percent}}%",
+    "selectFirst": "Please select a CSV file first.",
+    "validateFirst": "Please validate the file first.",
+    "invalidFile": "The CSV file is invalid or corrupted.",
+    "failed": "Import failed.",
+    "previewDetected": "Preview detected: {{timestamp}} (version {{version}})",
+    "previewLine": "Birth: {{birth}} | gender: {{gender}} | BVG: {{bvg}} CHF",
+    "cancel": "Cancel",
+    "validate": "Validate file",
+    "confirm": "Confirm import",
+    "inProgress": "Importing..."
+  },
+  "pillars": {
+    "ahv": "1st pillar / AHV",
+    "bvg": "2nd pillar / BVG pension fund",
+    "pillar3a": "3rd pillar 3a",
+    "life": "3rd pillar 3b life insurance",
+    "privat": "Private assets",
+    "tax": "Tax burden",
+    "taxLoad": "Tax burden",
+    "capitalBase": "Capital need",
+    "gap": "Difference (gap)"
+  },
+  "analysisPage": {
+    "title": "Analysis & scenarios",
+    "subtitle": "Income distribution by retirement age and inflation-adjusted net pension.",
+    "configureScenario": "Configure scenario",
+    "scenarios": {
+      "baseline": "Normal",
+      "early": "Early retirement",
+      "late": "Late retirement",
+      "inflation_shock": "Inflation shock",
+      "divorce": "Divorce"
+    },
+    "calcLoadError": "Calculation could not be loaded.",
+    "divorceAge": "Divorce age",
+    "capitalNeed": "Capital need",
+    "pensionComposition": "Pension composition",
+    "sum": "Total: + {{amount}}",
+    "shortfallAnalysis": "Shortfall analysis",
+    "taxBurden": "Tax burden",
+    "totalShortfall": "Total shortfall",
+    "totalAmount": "Total amount",
+    "incomeDistribution": "Income distribution by age",
+    "ahvReductionActive": "AHV reduction active from year {{year}} (age {{age}})",
+    "ahvReductionStable": "Stable in the model from year {{year}}: {{percent}}%",
+    "noAhvReduction": "No AHV reduction active in the current scenario",
+    "chartAria": "Bar chart of income distribution by age including tax segment",
+    "ahvReductionStarts": "AHV reduction starts",
+    "disclaimer": "Simplified estimate – not financial advice.",
+    "bvgWithdrawal": "BVG withdrawal for loan repayment",
+    "netIncomeName": "Net income",
+    "yearAge": "Year {{year}} · age {{age}}",
+    "taxPa": "Tax p.a.: CHF {{amount}} ({{percent}}% of gross)",
+    "ahvReductionInScenario": "AHV reduction in this scenario: {{value}}",
+    "noReduction": "no reduction",
+    "remainingWealth": "Remaining assets at this age: CHF {{amount}}",
+    "totalNetIncome": "Total net income",
+    "pensionVsCapital": "Pension: {{pension}} · capital need incl. tax: {{capital}}",
+    "underfunding": "Underfunding",
+    "surplus": "Surplus",
+    "pensionIncomeGroup": "Pension income",
+    "gapGroup": "Difference (gap)",
+    "capitalNeedGroup": "Capital need incl. tax",
+    "firstSignal": "First signal: {{message}}",
+    "checkInputs": "Please check the inputs."
+  },
+  "documents": {
+    "placeholder": "Document import (upload PDF, automatic processing in the background)."
+  },
+  "analysisConfig": {
+    "leftColumn": {
+      "retirementAge": {
+        "label": "Retirement age",
+        "tooltip": "Pension payout timing"
+      },
+      "currentAgeEstimate": {
+        "label": "Calculated age",
+        "tooltip": "Point in time for tax calculation"
+      },
+      "inflation": {
+        "label": "Inflation rate",
+        "tooltip": "Price-level adjustment, affects taxes and income"
+      }
+    },
+    "taxProgression": {
+      "title": "Tax progression",
+      "tooltip": "The higher the income, the higher the effective tax rate."
+    },
+    "taxAdjustment": {
+      "label": "Tax adjustment",
+      "tooltip": "Adjustment of the tax rate for scenarios (±%)"
+    },
+    "stressTest": {
+      "label": "Stress-test chart",
+      "tooltip": "Shows the impact of the tax adjustment on the overall result"
+    },
+    "taxBurdenSegment": {
+      "label": "Tax segment in chart",
+      "tooltip": "Shows the tax segment in the income chart.",
+      "aria": "Show annual tax burden in the bar chart"
+    },
+    "rightColumn": {
+      "title": "Tax overview",
+      "taxRate": {
+        "label": "Tax rate",
+        "tooltip": "Effective tax rate after progression"
+      },
+      "cantonModel": {
+        "label": "Cantonal model"
+      },
+      "modelIncome": {
+        "label": "Model 2025.1 income",
+        "tooltip": "CHF amount after adjustment"
+      }
+    },
+    "taxCanton": {
+      "defaultTooltip": "Automatically taken from the residence profile",
+      "noBracket": "no bracket",
+      "summary": "Tax progression {{canton}}. Current bracket for income CHF {{income}}: {{bracket}}. Overview: {{overview}}"
+    },
+    "compensation": {
+      "title": "Pension & tax offset",
+      "capitalNeedSlider": {
+        "label": "Percent of last income (2nd pillar)"
+      },
+      "capitalNeedTooltip": "Adjustment of the capital needed for retirement.",
+      "capitalNeedBaseTooltip": "Based on the last annual income from the 2nd pillar.",
+      "lastIncome": "Last income (2nd pillar): {{amount}}",
+      "resetLabel": "Reset to default",
+      "showChartToggleLabel": "Show comparison bars",
+      "showChartTooltip": "Shows additional comparison bars for tax and capital need."
+    },
+    "taxModelLoading": "Loading tax model...",
+    "taxModelErrorPrefix": "Fallback active: {{error}}",
+    "taxInterimSummary": "Tax evaluation (interim result): CHF {{tax}} p.a. at {{rate}}% on model income CHF {{income}}.",
+    "maturityNotSet": "not set",
+    "ageUnit": "years"
+  },
+  "analysisInputs": {
+    "gridTitle": "Use of severance pay",
+    "netAvailable": "Net available",
+    "column1": {
+      "label": "Pension fund deposit",
+      "sliderLabel": "Interest on pension savings (BVG minimum rate 2026: 1.25 %)"
+    },
+    "column2": {
+      "label": "Savings amount / banking",
+      "sliderLabel": "Avg. portfolio return (MSCI)"
+    },
+    "column3": {
+      "label": "Direct payout"
+    },
+    "currentValue": "Current",
+    "impactDisplay": "Buy-in at retirement (in the pension-fund capital of the payout plan)",
+    "pensionGain": "Of which interest",
+    "horizonYears": "until retirement",
+    "years": "years",
+    "savingsImpact": "Savings interest impact",
+    "savingsGain": "Of which interest gain",
+    "msciDefaultValue": "Variable per MSCI World Index",
+    "taxOptimizedPayout": "Tax-optimized payout",
+    "maturity": "Maturity",
+    "limitExceeded": "Limit exceeded",
+    "paidIn": "Paid in {{date}}",
+    "now": "now",
+    "usedFrom": "Used from",
+    "vsBvgMinimum": "{{delta}} pp vs. BVG minimum"
+  },
+  "settings": {
+    "title": "Settings",
+    "close": "Close",
+    "save": "Save settings",
+    "saved": "Settings saved.",
+    "aiSection": "AI model for document import",
+    "aiHint": "Reads fields from uploaded pension and insurance statements. Without an AI model, fields are filled by pattern matching.",
+    "aiProvider": "Provider",
+    "aiLocal": "Local (no API key)",
+    "aiCloud": "Cloud (API key)",
+    "disabled": "Disabled",
+    "aiLegend": "✓ connection tested · 🔑 API key stored — settings are kept per provider",
+    "endpointUrl": "Endpoint URL",
+    "endpointTip": "Provider base URL — pre-filled when you pick a provider",
+    "apiKey": "API Key",
+    "getKey": "Get API key",
+    "kimiCodeNote": "Kimi says the Kimi Code subscription is meant for coding tools. For your own applications Kimi recommends the Kimi Platform (API, pay-as-you-go).",
+    "modelName": "Model name",
+    "modelTip": "Pick from the available models after “Test connection”",
+    "chooseModel": "— Select model —",
+    "modelHint": "“Test connection” loads the model list",
+    "testConn": "Test connection",
+    "testing": "Testing…",
+    "connOk": "Connected",
+    "modelsFound": "{{count}} models available",
+    "aiTab": "AI model",
+    "securityTab": "Security"
+  },
+  "backup": {
+    "title": "Back up / restore settings",
+    "hint": "Backs up your saved settings as a JSON file: appearance (theme, language, density) and every AI provider with endpoint, model and API key. Restoring it means no key has to be entered again.",
+    "warn": "The file contains your API keys in plain text. Store it safely and don't share it.",
+    "exportBtn": "Export settings as JSON",
+    "importBtn": "Restore settings from JSON",
+    "importHint": "Overwrites the currently saved settings.",
+    "restored": "Settings restored ({{count}} API keys).",
+    "invalid": "Not a valid Pension Pal settings file."
+  },
+  "auth": {
+    "title_login": "Sign in to your account",
+    "title_register": "Create new account",
+    "title_forgot": "Forgot password",
+    "title_reset": "Set a new password",
+    "username": "Username",
+    "usernamePh": "Enter username",
+    "usernameOrEmail": "Username or email",
+    "usernameOrEmailPh": "Enter username or email",
+    "email": "Email",
+    "emailPh": "name@example.com",
+    "password": "Password",
+    "passwordPh": "Enter password",
+    "newPassword": "New password",
+    "newPasswordPh": "Password (min. 8 characters)",
+    "repeatPassword": "Repeat password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "forgotLink": "Forgot password?",
+    "forgotHint": "Enter your account's email. We'll send you a link to set a new password.",
+    "forgotSent": "If an account exists for this address, an email is on its way. The link is valid for 30 minutes. Check your spam folder too.",
+    "resetDone": "Your password has been changed and all devices were signed out. Please sign in again.",
+    "pinMismatch": "The passwords don't match.",
+    "submit_login": "Sign in",
+    "submit_register": "Create account & sign in",
+    "submit_forgot": "Send link",
+    "submit_reset": "Save password",
+    "working": "Please wait…",
+    "noAccount": "No account?",
+    "createOne": "Create one",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "backToLogin": "Back to sign in",
+    "requestNewLink": "Request a new link",
+    "err_login": "Wrong username/email or password.",
+    "err_link": "This link is invalid or has expired.",
+    "err_tooMany": "Too many attempts. Please try again in a few minutes.",
+    "err_uname": "This username is already taken.",
+    "err_email": "This email address is already in use.",
+    "err_emailOk": "Please enter a valid email address.",
+    "err_curPw": "The current password is incorrect.",
+    "err_tooShort": "The password needs at least 8 characters.",
+    "err_name": "The username needs 2 to 100 characters.",
+    "invite": "Invite code",
+    "inviteHint": "Pension-Pal is invite-only. Ask someone with an account for a code.",
+    "err_invite": "The invite code is invalid or has expired.",
+    "err_tooManyInvites": "Too many open invitations. Revoke some or let them expire.",
+    "err_passkey": "Passkey not accepted.",
+    "err_challenge": "The request has expired. Please try again.",
+    "or": "or",
+    "passkey": "Sign in with passkey",
+    "passkeyWaiting": "Waiting for device…",
+    "passkeyFailed": "Passkey sign-in failed."
+  },
+  "profile": {
+    "title": "Profile",
+    "save": "Save profile",
+    "saved": "Profile saved.",
+    "noEmail": "No email on file. Without one you can't reset a forgotten password.",
+    "confirmWithPassword": "Current password (confirms the new email)",
+    "changePassword": "Change password",
+    "currentPassword": "Current password",
+    "pwHint": "At least 8 characters. All other devices will be signed out.",
+    "pwChanged": "Password changed. Other devices are signed out."
+  },
+  "invites": {
+    "title": "Invitations",
+    "hint": "New accounts need an invitation. Each code is valid for 7 days and one account.",
+    "create": "Create invitation",
+    "copyLink": "Copy link",
+    "revoke": "Revoke",
+    "openUntil": "open until {{date}}",
+    "usedBy": "used by {{name}} on {{date}}",
+    "expired": "expired"
+  },
+  "security": {
+    "passkeys": "Passkeys",
+    "passkeysHint": "Face ID, Touch ID, Windows Hello or a security key — sign in without a password. Adding one needs your current password; you will get an info email.",
+    "deviceName": "Device name",
+    "devicePlaceholder": "e.g. MacBook Pro",
+    "addPasskey": "Add passkey",
+    "registering": "Waiting for device…",
+    "passkeyAdded": "Passkey added.",
+    "removePasskey": "Remove passkey",
+    "noPasskeys": "No passkey registered yet.",
+    "passkeyCancelled": "Cancelled — no passkey was created.",
+    "passkeyFailed": "Could not register the passkey. Passkeys require HTTPS or localhost.",
+    "passkeyUnsupported": "This browser does not support passkeys.",
+    "unknownDevice": "Unnamed device",
+    "addedOn": "added on {{date}}",
+    "lastUsed": "last used on {{date}}"
+  },
+  "payoutPlan": {
+    "title": "Payout planning: pension or lump sum, staggering and investment",
+    "intro": "What changes if you take the pension fund as a pension or a lump sum, spread the 3a accounts over several years and take the life insurance (3b) as capital or a pension? Capital paid out is invested and drawn down so that it lasts until the target age.",
+    "loading": "Loading payout planning from the profile …",
+    "kpiMonthly": "Monthly available from {{age}}",
+    "kpiDraw": "of which drawn from capital / month",
+    "kpiTax": "Capital withdrawal tax total",
+    "kpiWealth": "Invested wealth at {{age}}",
+    "realNote": "All amounts in today's purchasing power (inflation {{inflation}}% p.a.), before income tax on pensions and withdrawals.",
+    "bvgTitle": "2nd pillar (pension fund)",
+    "bvgCapital": "Retirement assets at {{age}} (CHF)",
+    "bvgCapitalHint": "Value from the pension statement (\"retirement assets at 65\" or at the planned age). Pre-filled with today's assets.",
+    "conversionRate": "Conversion rate (%)",
+    "capitalShare": "Lump sum share (rest as pension)",
+    "bvgResult": "Pension {{pension}} / month · lump sum {{capital}}",
+    "pillar3aTitle": "Pillar 3a",
+    "pillar3aHint": "Each account is paid out in full in one year, from {{min}} at the earliest; after the reference age up to {{max}} only if still working. Payouts in the same year (including the pension fund lump sum) are taxed together.",
+    "no3a": "No 3a accounts in the profile.",
+    "balance": "Balance today",
+    "return": "Return %",
+    "payoutAge": "Payout at",
+    "staggeringSaves": "Staggering saves you {{amount}} in tax compared with paying out all accounts at {{age}}.",
+    "staggeringHint": "Tip: spread 3a payouts over different years, not in the year of the pension fund lump sum; that lowers the progression.",
+    "lifeTitle": "Pillar 3b (life insurance)",
+    "lifeEnabled": "include",
+    "lifeMode_capital": "Lump sum",
+    "lifeMode_pension": "Pension",
+    "maturityAge": "Matures at",
+    "lifeCapital": "Lump sum (CHF)",
+    "lifePension": "Pension p.a. (CHF)",
+    "lifeTaxNote": "The lump sum of a surrenderable life insurance financed by periodic premiums is usually free of income tax at maturity (term of at least 5 years, signed before 66). A life annuity is partly taxable as income. Check the conditions of your own policy.",
+    "startWealth": "Free assets at retirement (CHF)",
+    "relationship": "Taxed as",
+    "relationship_single": "single",
+    "relationship_married": "married",
+    "variant": "Pension fund variant",
+    "variantBvg": "{{share}}% lump sum",
+    "variantMonthly": "Monthly available",
+    "variantPension": "Fund pension / month",
+    "variantNote": "Monthly available = AHV + pensions + a constant draw from the invested capital so that it lasts until {{age}}. A pension is paid for life; capital can run out if you live long, but can be inherited if you die early.",
+    "chartIncome": "Monthly income by age (today's francs, pensions after estimated income tax)",
+    "chartWealth": "Invested wealth by age (today's francs)",
+    "series_ahv": "AHV",
+    "series_bvg": "Fund pension",
+    "series_life": "3b pension",
+    "series_draw": "Draw from capital",
+    "series_wealth": "Wealth",
+    "taxTable": "Capital withdrawal tax per payout year",
+    "age": "Age",
+    "gross": "Gross payout",
+    "taxFederal": "Federal",
+    "taxCantonMunicipal": "Canton + municipality",
+    "taxRate": "Rate",
+    "taxSource": "Source: ESTV tax calculator, tax year {{year}}, {{municipality}} ({{canton}}), without church tax. Interpolated between the official grid points.",
+    "disclaimer": "Simulation with the chosen assumptions, not investment or tax advice. Returns are not guaranteed; check your own pension fund's rules (lump sum, notice periods).",
+    "kpiDrawOdds": "lasts until {{age}} in {{percent}}% of market paths",
+    "kpiSafeDraw": "Safe draw / month (90%)",
+    "kpiSafeDrawHint": "lasts until {{age}} in 9 of 10 simulated market paths",
+    "kpiPortfolio": "Portfolio return after costs",
+    "kpiPortfolioHint": "volatility ±{{vol}}% p.a.",
+    "bucketsTitle": "Investing the capital (buckets)",
+    "bucketsSummary": "Portfolio {{ret}}% p.a. after costs · volatility {{vol}}% · capital at retirement approx. {{amount}}",
+    "bucketsHint": "Capital paid out (pension fund, 3a, 3b, free assets) is split across the buckets by share and rebalanced yearly. Draws come proportionally from all buckets.",
+    "bucketProfile": "Investment",
+    "bucketShare": "Share %",
+    "bucketAmount": "Amount",
+    "bucketReturn": "Return %",
+    "bucketVol": "Volatility %",
+    "bucketTer": "Costs (TER) %",
+    "bucketRemove": "Remove bucket",
+    "bucketAdd": "Add bucket",
+    "bucketsAssumptions": "Defaults are long-term assumptions (nominal, before costs), not forecasts: cash 0.5%, conservative 2.5%, balanced 3.5%, growth 4.5%, world equities 6%. Deliberately below the historical values of recent decades; all values editable.",
+    "profile_cash": "Account / money market",
+    "profile_conservative": "Strategy fund conservative (~25% equities)",
+    "profile_balanced": "Strategy fund balanced (~50% equities)",
+    "profile_growth": "Strategy fund growth (~75% equities)",
+    "profile_worldEquity": "Equity ETF world (e.g. MSCI World)",
+    "profile_custom": "Custom assumptions",
+    "series_band": "10–90% of market paths",
+    "series_p50": "Median of market paths",
+    "chartWealthBand": "Line: plan at average return · dashed: median · area: 80% of simulated market paths (1000 paths)",
+    "series_planWealth": "Payout plan: invested wealth",
+    "bvgAnnualCredit": "Retirement credit + interest per year (CHF)",
+    "bvgAnnualCreditHint": "How much capital is missing per year of earlier retirement (or added per year later). Pre-filled: 18% of the insured salary (BVG minimum from 55); adjust from your pension statement.",
+    "partnerIncome": "Partner's income in retirement (CHF net / month)",
+    "partnerIncomeHint": "For the comparison with the median of a retiree household; if empty only your income counts.",
+    "medianIncomeLine": "Median retirees",
+    "medianTitle": "Comparison with the median of retirees",
+    "medianAbove": "Retiring at {{age}}, your household has about {{net}} net per month from the start of AHV (with a safe draw). That is {{pct}} above the median of retirees ({{median}}). Without drawing down capital, i.e. pensions after tax only: {{pctNoDraw}}.",
+    "medianBelow": "Retiring at {{age}}, your household has about {{net}} net per month from the start of AHV (with a safe draw). That is {{pct}} below the median of retirees ({{median}}). Without drawing down capital, i.e. pensions after tax only: {{pctNoDraw}}.",
+    "cmpAge": "Retirement",
+    "cmpAgeValue": "at {{age}} (AHV from {{ahv}})",
+    "cmpBridge": "until AHV / month",
+    "cmpPlan": "Plan / month",
+    "cmpSafe": "safe (90%) / month",
+    "cmpVsMedian": "vs. median",
+    "cmpVsMedianNoDraw": "without capital draw",
+    "cmpNote": "Net = AHV, fund and 3b pensions after estimated income tax ({{tax}}%) plus the draw from capital, in today's francs, excluding health insurance premiums (hence slightly too high). AHV from 63 at the earliest, reduced by 6.8% per year of early draw; conversion rate −5% per year earlier. Early retirees pay AHV contributions as non-earners until 65 (not deducted here).{{married}}",
+    "cmpNoteMarried": " Household = your income plus the partner's income entered; median of a couple = 1.5 × single person.",
+    "medianSources": "Median income: disposable income aged 65+, {{income}}; there is no finer breakdown by age above 65. Median wealth (dashed line in the wealth chart, up to 74): {{wealth}}, excluding pension fund and 3a — there is no Swiss-wide series by age.",
+    "series_medianWealth": "Median wealth (by age)",
+    "wealthOverviewTitle": "Wealth overview to age 100: capital or pension",
+    "wealthOverviewHint": "The same payout plan (settings above) with 100 % pension-fund lump sum, with 100 % pension and with your choice. Invested wealth in today's francs, from retirement. With a pension less wealth remains, but income is higher.",
+    "wealthOverviewMonthly": "CHF {{amount}}/month from AHV start · capital tax CHF {{tax}}",
+    "wealthOverviewEmpty": "The overview appears once the payout plan is loaded.",
+    "series_capitalOnly": "100 % lump sum",
+    "series_pensionOnly": "100 % pension",
+    "bvgBuyInIncluded": "incl. buy-in from the severance with interest: {{amount}}",
+    "buyInLock": "Buy-in less than 3 years before the lump-sum withdrawal: the resulting benefits may not be taken as capital (BVG Art. 79b para. 3), otherwise the tax deduction is reversed. Choose a pension or withdraw later.",
+    "profileChanged": "The profile has different values than this plan (the plan keeps its own values): pension-fund capital {{bvg}}, 3b capital {{life}}, 3b pension {{lifePension}} p.a., 3a balances.",
+    "applyProfile": "Use profile values",
+    "lifeCurrency": "The life insurance is recorded in {{currency}}; the plan treats the amounts as CHF without conversion. If needed, enter capital and pension here in CHF.",
+    "sourcesTitle": "Where the invested capital comes from",
+    "sourcesTotal": "invested in total {{amount}} (today's purchasing power)",
+    "sourcesHint": "Each lump sum in the year it is paid out: gross, its share of the capital withdrawal tax (pension fund and 3a in the same year are taxed together, tax split by amount) and net. \"Net today\" in today's purchasing power; this total is split across the pots by their shares.",
+    "sourcesWhen": "Age (year)",
+    "sourcesSource": "Source",
+    "sourcesGross": "Gross",
+    "sourcesTax": "Capital tax",
+    "sourcesNet": "Net",
+    "sourcesNetToday": "Net today",
+    "sourcesShare": "Share",
+    "sourcesCumulative": "cumulative",
+    "sourcesSum": "Total",
+    "src_bvg": "2nd pillar (pension fund)",
+    "src_buyIn": "Buy-in from severance (in the pension fund)",
+    "src_pillar3a": "Pillar 3a – {{label}}",
+    "src_life": "Pillar 3b (life insurance)",
+    "src_start": "Free assets at retirement",
+    "syncedTitle": "Changed values taken over from the cards",
+    "synced_bvg": "Pension-fund capital",
+    "synced_pillar3a": "3a balances total",
+    "synced_lifeCapital": "3b capital",
+    "synced_lifePension": "3b pension p.a.",
+    "synced_lifeMaturityAge": "3b maturity at age",
+    "syncUndo": "Undo",
+    "syncOk": "OK",
+    "kpiNoMedian": "no median comparison",
+    "kpiAboveMedian": "{{percent}} above median",
+    "kpiBelowMedian": "{{percent}} below median",
+    "kpiMonthlyNet": "net approx. {{amount}} · {{median}}",
+    "kpiSafeDrawNone": "capital doesn't last in weak markets",
+    "kpiTaxShare": "{{percent}} of lump sums",
+    "kpiWealthReserve": "reserve beyond the target age",
+    "kpiWealthUsedUp": "used up as planned",
+    "kpiStatus_good": "good",
+    "kpiStatus_warn": "tight",
+    "kpiStatus_bad": "critical",
+    "kpiStatus_info": "info",
+    "kpiWhy_monthly_good": "Your net income is at or above the median of retirees your age.",
+    "kpiWhy_monthly_warn": "Your net income is up to 15 % below the median of retirees your age.",
+    "kpiWhy_monthly_bad": "Your net income is more than 15 % below the median of retirees your age.",
+    "kpiWhy_monthly_info": "No median comparison is available for this household.",
+    "kpiWhy_draw_good": "At least 9 in 10 simulated market paths sustain this draw until age {{age}}.",
+    "kpiWhy_draw_warn": "75–90 % of simulated market paths sustain the draw until age {{age}} – little buffer for weak market years.",
+    "kpiWhy_draw_bad": "Fewer than 3 in 4 simulated market paths sustain the draw until age {{age}}. A lower draw or a later target age raises the odds.",
+    "kpiWhy_draw_info": "The success rate is not simulated here.",
+    "kpiWhy_safe_good": "The safe draw covers at least 90 % of the planned draw.",
+    "kpiWhy_safe_warn": "The safe draw covers less than 90 % of the planned draw – the plan relies on average markets.",
+    "kpiWhy_safe_bad": "In weak market paths the capital does not last until age {{age}}, even for a small draw.",
+    "kpiWhy_safe_info": "The safe draw is not simulated here.",
+    "kpiWhy_tax_info": "One-off tax on the lump sums (ESTV rates). Spreading withdrawals over several years often lowers it.",
+    "kpiWhy_wealth_good": "At the target age of {{age}}, invested wealth remains as a reserve.",
+    "kpiWhy_wealth_info": "The capital is used up as planned at {{age}} – no reserve for a longer life.",
+    "kpiWhy_portfolio_warn": "Volatility {{vol}} % per year (above 12 %): in bad years wealth can fall noticeably.",
+    "kpiWhy_portfolio_info": "Expected return after costs; volatility of {{vol}} % per year is within the usual range.",
+    "sched_title": "Payout schedule by pillar",
+    "sched_hint": "When each pot is paid out or its pension starts. Lump sums in the same year are taxed together and therefore progressively – spreading them saves tax.",
+    "sched_ageYear": "Age {{age}} ({{year}})",
+    "sched_bvg": "2nd pillar (pension fund)",
+    "sched_bvgNote": "Lump sum {{share}} %, rest as pension – from retirement",
+    "sched_life": "Pillar 3b (life insurance)",
+    "sched_capital": "Lump sum {{amount}}",
+    "sched_pensionPa": "Pension {{amount}} per year",
+    "sched_pensionShort": "Pension",
+    "sched_tax": "Tax",
+    "sched_today": "today",
+    "sched_legend": "Dot = lump sum, ring = pension start, gross amount in thousand CHF. Outline = payout year, red = several lump sums in the same year. Tax: lump-sum tax per year; bold = retirement.",
+    "sched_clash": "Several lump sums in the same year ({{years}}): they are added up and taxed at a higher rate. For tax reasons it makes sense to move the payout date of one pillar.",
+    "sched_empty": "No payouts from the 2nd pillar, 3a or 3b recorded.",
+    "sched_bvgShort": "2nd pillar",
+    "sched_lifeShort": "3b life",
+    "sched_age": "Age",
+    "sched_yearRow": "20xx"
+  },
+  "cockpit": {
+    "title": "Cockpit: analysis & planning",
+    "subtitle": "Results, charts and tables in the main area; all assumptions, sliders and scenarios in the sidebar on the right.",
+    "settings": "Settings",
+    "showSettings": "Show settings",
+    "hideSettings": "Hide settings",
+    "tabScenario": "Scenario",
+    "tabSeverance": "Severance",
+    "tabPillars": "Pillars",
+    "tabInvestment": "Investment",
+    "tabNeeds": "Needs",
+    "chipRetirement": "Retire at",
+    "chipInflation": "Inflation",
+    "chipTax": "Tax",
+    "chipCapitalShare": "PF lump sum",
+    "chipBuyIn": "PF buy-in",
+    "card_kpis": "Payout plan key figures",
+    "card_sources": "Where the invested capital comes from",
+    "card_median": "Median comparison · retiring at 60–66",
+    "card_variants": "Variants: lump sum or pension",
+    "card_incomeDistribution": "Income distribution in retirement",
+    "card_stress": "BVG pension with vs. without repayment (stress test)",
+    "collapseAll": "Collapse all",
+    "expandAll": "Expand all",
+    "resetLayout": "Reset layout",
+    "dragCard": "Move {{title}}",
+    "dragHint": "Drag to move (or Space, then arrow keys)"
+  }
+}

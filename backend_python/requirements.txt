@@ -1,0 +1,20 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+SQLAlchemy==2.0.36
+psycopg2-binary==2.9.10
+python-multipart==0.0.9
+pydantic==2.9.0
+pydantic-settings==2.5.2
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-jose[cryptography]==3.3.0
+alembic==1.13.3
+Pillow==11.0.0
+pytesseract==0.3.13
+pdfplumber==0.11.4
+pdf2image==1.17.0
+httpx==0.27.2
+pytest==8.3.3
+openpyxl==3.1.5
+# Passkeys (WebAuthn / FIDO2), wie Budget-Pal
+webauthn==2.5.2

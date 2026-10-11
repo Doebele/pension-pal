@@ -1,0 +1,19 @@
+{
+  "layout": {
+    "topSectionColumns": 3,
+    "leftColumn": {
+      "sliders": [
+        { "id": "retirementAge", "min": 56, "max": 70, "default": 64 },
+        { "id": "currentAgeEstimate", "min": 25, "max": 69, "default": "current" },
+        { "id": "inflation", "min": 0, "max": 10, "step": 0.1, "default": 2.5 }
+      ]
+    },
+    "middleColumn": {
+      "taxAdjustment": { "id": "taxRateAdjustment", "min": -50, "max": 50, "step": 0.5 },
+      "stressTestToggle": { "id": "showStressTestChart", "default": false }
+    },
+    "compensationAnalysis": {
+      "capitalNeedSlider": { "id": "capitalNeedPercent", "min": 50, "max": 120, "step": 1, "default": 75 }
+    }
+  }
+}

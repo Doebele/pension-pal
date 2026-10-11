@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T15:56:00+02:00",
+  "title": "Design System: Pension-Pal",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Banker's Blue",
+        "canonical": "#3b82f6",
+        "tonalRamp": [
+          "#031e49",
+          "#06347f",
+          "#094cb9",
+          "#0b62ef",
+          "#3c83f6",
+          "#76a8f9",
+          "#accafb",
+          "#e7effe"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Night Desk",
+        "canonical": "#0d0e12",
+        "tonalRamp": [
+          "#20232c",
+          "#383c4d",
+          "#515871",
+          "#697191",
+          "#898fa9",
+          "#acb1c3",
+          "#cdcfdb",
+          "#f0f1f4"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Desk Pad",
+        "canonical": "#13141a",
+        "tonalRamp": [
+          "#20222c",
+          "#383b4d",
+          "#525670",
+          "#6a6f90",
+          "#898ea9",
+          "#acb0c3",
+          "#cdcfda",
+          "#f0f1f4"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Felt Pad",
+        "canonical": "#1a1b23",
+        "tonalRamp": [
+          "#21222c",
+          "#383b4c",
+          "#52566f",
+          "#6a6e90",
+          "#8a8da8",
+          "#adafc2",
+          "#cdcfda",
+          "#f0f1f4"
+        ]
+      },
+      "fg-1": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#f0f1f5",
+        "tonalRamp": [
+          "#1f222e",
+          "#353a50",
+          "#4e5574",
+          "#646e96",
+          "#858dad",
+          "#a9afc6",
+          "#cbcedc",
+          "#f0f1f5"
+        ]
+      },
+      "fg-2": {
+        "role": "neutral",
+        "displayName": "Lamplight",
+        "canonical": "#b4bfcc",
+        "tonalRamp": [
+          "#1f262e",
+          "#36414f",
+          "#4e5f73",
+          "#657b95",
+          "#8697ac",
+          "#aab6c5",
+          "#cbd3dc",
+          "#f0f2f5"
+        ]
+      },
+      "fg-3": {
+        "role": "neutral",
+        "displayName": "Dusk",
+        "canonical": "#8896a8",
+        "tonalRamp": [
+          "#20262c",
+          "#38414d",
+          "#525f70",
+          "#6a7b90",
+          "#8997a9",
+          "#adb6c3",
+          "#cdd3da",
+          "#f0f2f4"
+        ],
+        "lightValue": "#5f6b7a"
+      },
+      "green": {
+        "role": "semantic",
+        "displayName": "Ledger Green",
+        "canonical": "#4ade80",
+        "tonalRamp": [
+          "#0c411f",
+          "#147036",
+          "#1ea44f",
+          "#27d366",
+          "#52e086",
+          "#86e9aa",
+          "#b6f2cc",
+          "#e9fbf0"
+        ],
+        "lightValue": "#15803d"
+      },
+      "red": {
+        "role": "semantic",
+        "displayName": "Ink Red",
+        "canonical": "#f87171",
+        "tonalRamp": [
+          "#490404",
+          "#7e0606",
+          "#b90909",
+          "#ee0c0c",
+          "#f53d3d",
+          "#f87777",
+          "#fbacac",
+          "#fee7e7"
+        ],
+        "lightValue": "#b91c1c"
+      },
+      "yellow": {
+        "role": "semantic",
+        "displayName": "Brass Yellow",
+        "canonical": "#fbbf24",
+        "tonalRamp": [
+          "#4b3602",
+          "#815e03",
+          "#bd8a05",
+          "#f4b106",
+          "#fac438",
+          "#fbd674",
+          "#fde6aa",
+          "#fef8e6"
+        ],
+        "lightValue": "#b45309"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Card totals and headline figures on the dashboard."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "View titles and modal headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card headers and section titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text, form values, explanations."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels and hints; 10px in pro density, 12px in comfort."
+      }
+    },
+    "shadows": [
+      {
+        "name": "modal",
+        "value": "0 24px 64px rgba(0,0,0,0.55)",
+        "purpose": "Dialogs, account popover, settings modal."
+      },
+      {
+        "name": "card",
+        "value": "0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.32)",
+        "purpose": "Resting cards layered over busy content."
+      },
+      {
+        "name": "active-control",
+        "value": "0 1px 4px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12)",
+        "purpose": "Selected segmented-button pill rising off its track."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Default easing for state transitions."
+      },
+      {
+        "name": "popover-in",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Popover mount/open/close lifecycle per the team-wide contract."
+      },
+      {
+        "name": "rail-collapse",
+        "value": "220ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "The one sanctioned layout-property transition (rail width)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ],
+    "breakpointsNote": "Tailwind defaults; used sparingly (~47 modifiers). Desktop-first by design; mobile shell is a known gap."
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one committed action per surface. Banker's Blue, white text, hover lightens.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Szenario speichern</button>",
+      "css": ".ds-btn-primary { background: var(--accent, #3b82f6); color: #fff; border: none; border-radius: 10px; padding: 10px 16px; font: 600 14px/1.2 ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background 150ms cubic-bezier(0.4,0,0.2,1); } .ds-btn-primary:hover { background: #60a5fa; } .ds-btn-primary:active { background: #2563eb; } .ds-btn-primary:disabled { opacity: 0.5; cursor: default; } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 2px; }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Form control: hairline slate border, dark fill, accent focus ring, rose error state.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Jahresbruttoeinkommen</span><input class=\"ds-input\" type=\"text\" inputmode=\"numeric\" placeholder=\"120’000\" /><span class=\"ds-field-hint\">In CHF, heutiger Kaufkraft</span></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 4px; font-family: ui-sans-serif, system-ui, sans-serif; } .ds-field-label { font-size: 11px; font-weight: 500; color: var(--fg-2, #b4bfcc); } .ds-input { width: 100%; border: 1px solid rgba(148,163,184,0.35); border-radius: 10px; background: rgba(30,41,59,0.8); color: var(--fg-1, #f0f1f5); padding: 8px 12px; font-size: 14px; outline: none; transition: border-color 150ms, box-shadow 150ms; } .ds-input::placeholder { color: var(--fg-3, #8896a8); } .ds-input:focus { border-color: var(--accent, #3b82f6); box-shadow: 0 0 0 1px var(--accent, #3b82f6); } .ds-field-hint { font-size: 11px; color: var(--fg-3, #8896a8); }"
+    },
+    {
+      "name": "Rail Navigation",
+      "kind": "nav",
+      "refersTo": "rail-button-active",
+      "description": "The left rail: brand, wayfinding, footer controls. Active item carries the accent and a 3px wayfinding bar.",
+      "html": "<nav class=\"ds-rail\"><div class=\"ds-rail-brand\"><span class=\"ds-rail-mark\">P</span><span class=\"ds-rail-name\">Pension-Pal</span></div><button class=\"ds-rail-btn\" type=\"button\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/></svg><span>Uebersicht</span></button><button class=\"ds-rail-btn ds-active\" type=\"button\" aria-current=\"page\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/></svg><span>Analyse</span></button><button class=\"ds-rail-btn\" type=\"button\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/></svg><span>Monte Carlo</span></button></nav>",
+      "css": ".ds-rail { width: 220px; background: var(--surface, #13141a); border-right: 1px solid rgba(255,255,255,0.1); padding: 8px; display: flex; flex-direction: column; gap: 2px; font-family: ui-sans-serif, system-ui, sans-serif; } .ds-rail-brand { display: flex; align-items: center; gap: 10px; padding: 10px; margin-bottom: 6px; } .ds-rail-mark { width: 26px; height: 26px; border-radius: 5px; background: linear-gradient(135deg, var(--accent, #3b82f6), #1e40af); color: #fff; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; } .ds-rail-name { font-size: 14px; font-weight: 700; color: var(--fg-1, #f0f1f5); letter-spacing: -0.02em; } .ds-rail-btn { display: flex; align-items: center; gap: 8px; width: 100%; padding: 5px 10px; border: none; border-left: 3px solid transparent; border-radius: 5px; background: transparent; color: var(--fg-2, #b4bfcc); font-size: 12.5px; font-weight: 500; text-align: left; cursor: pointer; transition: background 120ms, color 120ms; } .ds-rail-btn:hover { background: rgba(59,130,246,0.08); color: var(--accent, #3b82f6); } .ds-rail-btn:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: -2px; } .ds-rail-btn.ds-active { background: rgba(59,130,246,0.15); color: var(--accent, #3b82f6); border-left-color: var(--accent, #3b82f6); font-weight: 600; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "seg-button-active",
+      "description": "Felt-pad track with a raised active pill: the one control allowed an offset shadow.",
+      "html": "<div class=\"ds-seg\" role=\"tablist\"><button class=\"ds-seg-btn ds-active\" role=\"tab\" aria-selected=\"true\" type=\"button\">Kapital</button><button class=\"ds-seg-btn\" role=\"tab\" aria-selected=\"false\" type=\"button\">Rente</button><button class=\"ds-seg-btn\" role=\"tab\" aria-selected=\"false\" type=\"button\">Gemischt</button></div>",
+      "css": ".ds-seg { display: flex; gap: 3px; padding: 2px; background: var(--surface-2, #1a1b23); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; } .ds-seg-btn { flex: 1; padding: 6px 10px; border: none; border-radius: 5px; background: transparent; color: var(--fg-3, #8896a8); font: 600 11px/1.2 ui-sans-serif, system-ui, sans-serif; white-space: nowrap; cursor: pointer; transition: background 120ms, color 120ms, box-shadow 120ms; } .ds-seg-btn:hover { color: var(--fg-1, #f0f1f5); } .ds-seg-btn:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 1px; } .ds-seg-btn.ds-active { background: var(--surface, #13141a); color: var(--fg-1, #f0f1f5); box-shadow: 0 1px 4px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12); }"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": null,
+      "description": "Low-emphasis toggle for filters and variants; the active state commits the accent at low saturation.",
+      "html": "<button class=\"ds-chip ds-active\" type=\"button\" aria-pressed=\"true\">Fruehrente ab 63</button>",
+      "css": ".ds-chip { border: 1px solid rgba(51,65,85,0.9); background: rgba(15,23,42,0.4); color: var(--fg-2, #b4bfcc); border-radius: 8px; padding: 8px 12px; font-size: 11px; cursor: pointer; transition: border-color 120ms, background 120ms, color 120ms; } .ds-chip:hover { border-color: rgba(71,85,105,0.9); background: rgba(30,41,59,0.7); } .ds-chip:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 2px; } .ds-chip.ds-active { border-color: rgba(59,130,246,0.5); background: rgba(59,130,246,0.2); color: #dbeafe; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Resting surface: tonal step over the background, hairline border, flat by default.",
+      "html": "<section class=\"ds-card\"><header class=\"ds-card-head\"><h3 class=\"ds-card-title\">Saeule 3a</h3><span class=\"ds-card-meta\">2 Konten</span></header><p class=\"ds-card-body\">Bezahlt bis 60, gestaffelter Bezug moeglich.</p><footer class=\"ds-card-foot\"><button class=\"ds-btn-primary\" type=\"button\">Bearbeiten <svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 6 6 6-6 6\"/></svg></button></footer></section>",
+      "css": ".ds-card { background: var(--surface, #13141a); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; font-family: ui-sans-serif, system-ui, sans-serif; } .ds-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; } .ds-card-title { margin: 0; font-size: 14px; font-weight: 600; color: var(--fg-1, #f0f1f5); } .ds-card-meta { font-size: 11px; color: var(--fg-3, #8896a8); } .ds-card-body { margin: 0; font-size: 12px; line-height: 1.45; color: var(--fg-2, #b4bfcc); } .ds-card-foot { display: flex; justify-content: flex-end; } .ds-card-foot .ds-btn-primary { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; font-size: 12px; }"
+    },
+    {
+      "name": "Chart Tooltip",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Signature overlay: compact slate panel, hairline border, 10px tabular figures. The chart-emphasis white glow is the sanctioned exception to The Lamplight Rule.",
+      "html": "<div class=\"ds-tooltip\"><div class=\"ds-tooltip-title\">Bezug mit 63</div><div class=\"ds-tooltip-row\"><span>Rente AHV+BVG</span><b>4’512</b></div><div class=\"ds-tooltip-row ds-pos\"><span>Ueberschuss</span><b>+18’900</b></div></div>",
+      "css": ".ds-tooltip { min-width: 180px; background: rgba(2,6,23,0.95); border: 1px solid rgba(71,85,105,0.8); border-radius: 8px; padding: 10px 12px; font: 10px/1.5 ui-sans-serif, system-ui, sans-serif; color: var(--fg-1, #f0f1f5); font-variant-numeric: tabular-nums; } .ds-tooltip-title { font-weight: 700; margin-bottom: 4px; } .ds-tooltip-row { display: flex; justify-content: space-between; gap: 12px; color: var(--fg-2, #b4bfcc); } .ds-tooltip-row b { color: var(--fg-1, #f0f1f5); font-weight: 600; } .ds-tooltip-row.ds-pos b { color: var(--green, #4ade80); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Desk",
+    "overview": "A banker's desk after hours: a dark room, documents laid out side by side for one decision, and a single pool of light that falls exactly where attention is needed. Pension-Pal is that desk. The interface stays quiet and dark so the numbers carry the light; everything on screen earns its place. Precise, premium, calm, and human: aligned Swiss-formatted figures, one confident accent, plain-spoken copy for 55+ readers. Sister of Budget-Pal, Fintools, and Application-Pal.",
+    "keyCharacteristics": [
+      "Dark-first; light mode is a fully equal citizen",
+      "Data-dense and compact; whitespace is spent on grouping, never on padding",
+      "One accent hue; semantic colors appear only as meaning",
+      "System font stack — no webfonts",
+      "Depth through tonal layering; shadows are dark, offset, and rare",
+      "Motion is short, purposeful, and honors prefers-reduced-motion"
+    ],
+    "rules": [
+      {
+        "name": "The One Voice Rule",
+        "body": "Banker's Blue appears on <=10% of any screen. It marks the current decision; its rarity is the point.",
+        "section": "colors"
+      },
+      {
+        "name": "The Meaning Rule",
+        "body": "Green, red, and yellow encode financial meaning only — never decoration, branding, or chart variety beyond the categorical set.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Theme Rule",
+        "body": "Every surface, text, and accent color must resolve to an AA-compliant value in both dark and light via styles.css token pairs.",
+        "section": "colors"
+      },
+      {
+        "name": "The Instrument Rule",
+        "body": "Numbers use tabular figures and right alignment; money follows Swiss formatting (1'234.50). Never center a column of numbers.",
+        "section": "typography"
+      },
+      {
+        "name": "The Floor Rule",
+        "body": "14px body floor, 11px labels, 9px only for rail micro-labels. Nothing readable goes smaller.",
+        "section": "typography"
+      },
+      {
+        "name": "The Grouping Rule",
+        "body": "Tight internals, clear separation: 4-8px inside a control, 12-16px between fields, 24-28px between sections.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lamplight Rule",
+        "body": "In dark mode depth is a shadow, not a halo: dark, offset, blurred. Zero-offset colored glows are forbidden as elevation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Resting surfaces are flat: tonal step + hairline border. Shadows announce floating layers only.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "One-pixel token borders separate every surface; if a separation needs more, use a tonal step, not a heavier line.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Route every color through styles.css tokens and every chart color through chartColors.ts",
+      "Keep dark and light token values paired when adding a token",
+      "Use data-theme theming (the dark: Tailwind variant is not used)",
+      "Reuse rail, segmented-control, and popover-smooth patterns with their documented motion contract",
+      "Write numbers in Swiss format, right-aligned in tables"
+    ],
+    "donts": [
+      "Introduce hues beyond Banker's Blue + the three semantic colors",
+      "Hard-code hex values in components, including chart strokes",
+      "Use zero-offset glow shadows for elevation in dark mode",
+      "Animate layout properties except the rail width transition",
+      "Use the dark: class variant; theming is exclusively [data-theme=light] token overrides",
+      "Fill missing values with example data — missing stays empty"
+    ]
+  }
+}

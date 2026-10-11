@@ -1,0 +1,50 @@
+name: CI
+
+# Öffentliche Kopie: nur Tests. Build, Image-Push und Deploy laufen ausschliesslich im privaten Repo.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    # Pinned: ubuntu-latest moves to Ubuntu 26 on 2026-10-19; bump deliberately after checking setup-python
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Frontend build
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+          npm run check:payout
+          npm run typecheck
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Backend tests
+        working-directory: backend_python
+        run: |
+          pip install -r requirements.txt
+          PYTHONPATH=. pytest -q
+
